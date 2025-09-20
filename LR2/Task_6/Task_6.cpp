@@ -10,4 +10,5 @@ int main(){
   A = D*x/b;
   S = (pow(A, 2) + b*cos(x))/(pow(D, 3) + (A + D - b));
   cout << "S = " << S;
+  return 0;
 }
