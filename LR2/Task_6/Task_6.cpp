@@ -3,13 +3,12 @@
 using namespace std;
 
 int main(){
-  int h;
-  double x, p, A, B, C, D, K, Y;
-  cout << "Ввести x, p, h, K, C, D: ";
-  cin >> x >> p >> h >> K >> C >> D;
-  A = x - p;
-  B = log(h);
-  Y = 0.78 * B + pow(A, 3)/(K*C*D);
+  double x, d, A, B, C, K, Y;
+  cout << "Ввести x, d, K, C: ";
+  cin >> x >> d >> K >> C;
+  A = log10(x);
+  B = x + exp(d);
+  Y = A+B - (pow(C, 2)/K);
   cout << "Y = " << Y;
   return 0;
 }
