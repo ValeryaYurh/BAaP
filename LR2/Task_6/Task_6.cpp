@@ -3,12 +3,12 @@
 using namespace std;
 
 int main(){
-  double A, D, x, b, S;
-  cout << "Ввести D, x: ";
-  cin >> D >> x;
-  b = x + D;
-  A = D*x/b;
-  S = (pow(A, 2) + b*cos(x))/(pow(D, 3) + (A + D - b));
-  cout << "S = " << S;
+  double A, B, D, C, x, y, K, z, T;
+  cout << "Ввести x, y, z, K, C, D: ";
+  cin >> x >> y >> z >> K >> C >> D;
+  B = sqrt(z);
+  A = x - y;
+  T = cos(x) + pow(A, 2)/(K - (C*D)) - B;
+  cout << "T = " << T;
   return 0;
 }
