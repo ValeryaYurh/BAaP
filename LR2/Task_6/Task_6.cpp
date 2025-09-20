@@ -8,7 +8,7 @@ int main(){
   cin >> x >> p >> K >> C >> D;
   A = x + sin(p);
   B = exp(K);
-  Y = 1 + (pow(K, 2)/2*A*B) -B + (D*C);
+  Y = 1 + (pow(K, 2)/(2*A*B)) -B + (D*C);
   cout << "Y = " << Y;
   return 0;
 }
