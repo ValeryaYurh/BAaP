@@ -22,6 +22,7 @@ int main(){
         min = min2 - min1;
     }else if(min1>min2){
         min = 60 - min1 + min2;
+        h = h2 - h1 -1; 
     }
     cout << "Общее потраченное время: " << h << ":" << min;
     return 0;
