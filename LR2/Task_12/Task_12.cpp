@@ -1,26 +1,34 @@
 #include <iostream>
-using namespace std; 
 
-int main(){
-    int a, b, c;
-    double x1, x2, x3, x4, y1, y2, D;
-    cout << "Ввести a, b, c: ";
-    cin >> a >> b >> c;
-    D = b*b - 4*a*c;
-    if(D>=0){
-        y1 = (-b + sqrt(D))/(2*a);
-        y2 = (-b - sqrt(D))/(2*a);
-         if(y1>=0 or y2>=0){
-          x1 = sqrt(y1);
-          x2 = -x1;
-          x3 = sqrt(y2);
-          x4 = -x3;
-          cout << "Корни уравнения: " << x1 << " " << x2 << " " << x3 << " " << x4;
-          }else{
-            cout << "Корней нет"; 
-         }
-    }else{
-        cout << "Корней нет";
+int main() {
+    double a, b, c;
+    std::cout << "Enter a b c: ";
+    std::cin >> a >> b >> c;
+
+    double A = 1;
+    double B = b / a;
+    double C = c / a - 2;
+
+    double D = B*B - 4*A*C;
+
+    if (D < 0) {
+        std::cout << "No real solutions\n";
+        return 0;
     }
+
+    double y1 = (-B + sqrt(D)) / (2*A);
+    double y2 = (-B - sqrt(D)) / (2*A);
+
+    for (int i = 0; i < 2; ++i) {
+        double y = (i == 0) ? y1 : y2;
+        double disc = y*y - 4;
+        if (disc < 0) continue;
+
+        double x1 = (y + sqrt(disc)) / 2;
+        double x2 = (y - sqrt(disc)) / 2;
+
+        std::cout << "x = " << x1 << " and x = " << x2 << "\n";
+    }
+
     return 0;
 }
