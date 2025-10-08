@@ -20,7 +20,7 @@ void sum()
     {
         double x = a + i * h;
         y = sin(x) - cos(x);
-        cout << GREEN << "Результат вычислений равен: " << x << "\t" << y << RESET << endl;
+        cout << GREEN << "Результат вычислений равен: " << y << "\t" << "при x: " << x << RESET << endl;
     }
 
 }
