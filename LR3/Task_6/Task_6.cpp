@@ -11,15 +11,21 @@ using namespace std;
 
 double mySin(double x)
 {
-    double term = x;
-    double sum = 0.0;
-    int sign = 1;
+    const double PI = 3.141592653589793;
+   
+    while (x > PI)
+        x -= 2 * PI;
+    while (x < -PI)
+        x += 2 * PI;
 
-    for (int n = 1; n <= 10; ++n)
+    double term = x;          
+    double sum = 0.0;       
+    int sign = 1;           
+    for (int n = 1; n <= 15; ++n)  
     {
         sum += sign * term;
-        term = term * x * x / ((2 * n) * (2 * n + 1));
-        sign = -sign;
+        term = term * x * x / ((2*n) * (2*n + 1));
+        sign = -sign;   
     }
 
     return sum;
@@ -64,23 +70,22 @@ double myLn(double x)
 
 double myCos(double x)
 {
-
     const double PI = 3.141592653589793;
+    
     while (x > PI)
         x -= 2 * PI;
     while (x < -PI)
         x += 2 * PI;
 
     double sum = 0.0;
+    double term = 1.0; 
     int sign = 1;
 
-    for (int n = 0; n < 10; ++n)
+    for (int n = 0; n < 15; ++n)  
     {
-        double term = 1;
-
-        for (int i = 1; i <= 2 * n; ++i)
-            term *= x / i;
         sum += sign * term;
+        
+        term *= x * x / ((2*n + 1) * (2*n + 2));
         sign = -sign;
     }
 
