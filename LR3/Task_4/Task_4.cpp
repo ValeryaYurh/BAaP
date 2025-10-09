@@ -16,7 +16,7 @@ double sum()
     cout << BYELLOW << "Ввести x(0.1-1): ";
     cin >> x;
     int n;
-    cout << BBLUE << "Ввести n: ";
+    cout << BBLUE << "Ввести n(n>=1): ";
     cin >> n;
     double y = x * atan(x) - log(sqrt(1 + x * x));
     double s = 0;

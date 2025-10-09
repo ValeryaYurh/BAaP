@@ -13,7 +13,7 @@ using namespace std;
 double sum()
 {
     int n, i, a, k;
-    cout << BBLUE << "Ввести количество элементов n: ";
+    cout << BBLUE << "Ввести количество элементов n(n>0): ";
     cin >> n;
     cout << "Ввести последний элемент a: ";
     cin >> a;
