@@ -58,6 +58,7 @@ void sum()
   cout << GREEN << "\n"
        << "Сумма элементов равна: " << sum_even << endl
        << "Произведение равно: " << product_odd << endl;
+  
   for (int i = 0; i < n; i++)
   {
     delete[] array[i];
