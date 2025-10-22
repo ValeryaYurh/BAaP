@@ -218,53 +218,53 @@ LabWork4_PartC/Task_4/Task_4.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_4.dir/build.make CMakeFiles/Task_4.dir/LabWork4_PartC/Task_4/Task_4.c.s
 .PHONY : LabWork4_PartC/Task_4/Task_4.c.s
 
-LabWork4_PartC/Task_5/Task_5.o: LabWork4_PartC/Task_5/Task_5.cpp.o
+LabWork4_PartC/Task_5/Task_5.o: LabWork4_PartC/Task_5/Task_5.c.o
 .PHONY : LabWork4_PartC/Task_5/Task_5.o
 
 # target to build an object file
-LabWork4_PartC/Task_5/Task_5.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_5.dir/build.make CMakeFiles/Task_5.dir/LabWork4_PartC/Task_5/Task_5.cpp.o
-.PHONY : LabWork4_PartC/Task_5/Task_5.cpp.o
+LabWork4_PartC/Task_5/Task_5.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_5.dir/build.make CMakeFiles/Task_5.dir/LabWork4_PartC/Task_5/Task_5.c.o
+.PHONY : LabWork4_PartC/Task_5/Task_5.c.o
 
-LabWork4_PartC/Task_5/Task_5.i: LabWork4_PartC/Task_5/Task_5.cpp.i
+LabWork4_PartC/Task_5/Task_5.i: LabWork4_PartC/Task_5/Task_5.c.i
 .PHONY : LabWork4_PartC/Task_5/Task_5.i
 
 # target to preprocess a source file
-LabWork4_PartC/Task_5/Task_5.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_5.dir/build.make CMakeFiles/Task_5.dir/LabWork4_PartC/Task_5/Task_5.cpp.i
-.PHONY : LabWork4_PartC/Task_5/Task_5.cpp.i
+LabWork4_PartC/Task_5/Task_5.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_5.dir/build.make CMakeFiles/Task_5.dir/LabWork4_PartC/Task_5/Task_5.c.i
+.PHONY : LabWork4_PartC/Task_5/Task_5.c.i
 
-LabWork4_PartC/Task_5/Task_5.s: LabWork4_PartC/Task_5/Task_5.cpp.s
+LabWork4_PartC/Task_5/Task_5.s: LabWork4_PartC/Task_5/Task_5.c.s
 .PHONY : LabWork4_PartC/Task_5/Task_5.s
 
 # target to generate assembly for a file
-LabWork4_PartC/Task_5/Task_5.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_5.dir/build.make CMakeFiles/Task_5.dir/LabWork4_PartC/Task_5/Task_5.cpp.s
-.PHONY : LabWork4_PartC/Task_5/Task_5.cpp.s
+LabWork4_PartC/Task_5/Task_5.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_5.dir/build.make CMakeFiles/Task_5.dir/LabWork4_PartC/Task_5/Task_5.c.s
+.PHONY : LabWork4_PartC/Task_5/Task_5.c.s
 
-LabWork4_PartC/Task_6/Task_6.o: LabWork4_PartC/Task_6/Task_6.cpp.o
+LabWork4_PartC/Task_6/Task_6.o: LabWork4_PartC/Task_6/Task_6.c.o
 .PHONY : LabWork4_PartC/Task_6/Task_6.o
 
 # target to build an object file
-LabWork4_PartC/Task_6/Task_6.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_6.dir/build.make CMakeFiles/Task_6.dir/LabWork4_PartC/Task_6/Task_6.cpp.o
-.PHONY : LabWork4_PartC/Task_6/Task_6.cpp.o
+LabWork4_PartC/Task_6/Task_6.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_6.dir/build.make CMakeFiles/Task_6.dir/LabWork4_PartC/Task_6/Task_6.c.o
+.PHONY : LabWork4_PartC/Task_6/Task_6.c.o
 
-LabWork4_PartC/Task_6/Task_6.i: LabWork4_PartC/Task_6/Task_6.cpp.i
+LabWork4_PartC/Task_6/Task_6.i: LabWork4_PartC/Task_6/Task_6.c.i
 .PHONY : LabWork4_PartC/Task_6/Task_6.i
 
 # target to preprocess a source file
-LabWork4_PartC/Task_6/Task_6.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_6.dir/build.make CMakeFiles/Task_6.dir/LabWork4_PartC/Task_6/Task_6.cpp.i
-.PHONY : LabWork4_PartC/Task_6/Task_6.cpp.i
+LabWork4_PartC/Task_6/Task_6.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_6.dir/build.make CMakeFiles/Task_6.dir/LabWork4_PartC/Task_6/Task_6.c.i
+.PHONY : LabWork4_PartC/Task_6/Task_6.c.i
 
-LabWork4_PartC/Task_6/Task_6.s: LabWork4_PartC/Task_6/Task_6.cpp.s
+LabWork4_PartC/Task_6/Task_6.s: LabWork4_PartC/Task_6/Task_6.c.s
 .PHONY : LabWork4_PartC/Task_6/Task_6.s
 
 # target to generate assembly for a file
-LabWork4_PartC/Task_6/Task_6.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_6.dir/build.make CMakeFiles/Task_6.dir/LabWork4_PartC/Task_6/Task_6.cpp.s
-.PHONY : LabWork4_PartC/Task_6/Task_6.cpp.s
+LabWork4_PartC/Task_6/Task_6.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_6.dir/build.make CMakeFiles/Task_6.dir/LabWork4_PartC/Task_6/Task_6.c.s
+.PHONY : LabWork4_PartC/Task_6/Task_6.c.s
 
 Task_1/Task_1.o: Task_1/Task_1.cpp.o
 .PHONY : Task_1/Task_1.o

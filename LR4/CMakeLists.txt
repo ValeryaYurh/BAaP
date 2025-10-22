@@ -19,4 +19,4 @@ add_executable(Task_4 LabWork4_PartC/Task_4/Task_4.c)
 add_executable(Task_5 LabWork4_PartC/Task_5/Task_5.c)
 
 # Для Task_6
-add_executable(Task_6 LabWork4_PartC/Task_6/Task_6.cpp)
+add_executable(Task_6 LabWork4_PartC/Task_6/Task_6.c)

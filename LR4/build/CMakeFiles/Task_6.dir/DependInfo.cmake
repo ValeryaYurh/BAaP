@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/LabWork4_PartC/Task_6/Task_6.cpp" "CMakeFiles/Task_6.dir/LabWork4_PartC/Task_6/Task_6.cpp.o" "gcc" "CMakeFiles/Task_6.dir/LabWork4_PartC/Task_6/Task_6.cpp.o.d"
+  "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/LabWork4_PartC/Task_6/Task_6.c" "CMakeFiles/Task_6.dir/LabWork4_PartC/Task_6/Task_6.c.o" "gcc" "CMakeFiles/Task_6.dir/LabWork4_PartC/Task_6/Task_6.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
