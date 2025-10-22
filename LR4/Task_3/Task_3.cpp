@@ -17,7 +17,13 @@ void sum()
     cout << BRED << "Число должно быть строго больше нуля. Измените значение: ";
     cin >> n;
   }
-  int array[n][n];
+
+  int **array = new int *[n];
+  for (int i = 0; i < n; i++)
+  {
+    array[i] = new int[n];
+  }
+
   cout << BYELLOW << "Ввести элементы подмассива: " << endl;
   for (int i = 0; i < n; i++)
   {
@@ -52,8 +58,11 @@ void sum()
   cout << GREEN << "\n"
        << "Сумма элементов равна: " << sum_even << endl
        << "Произведение равно: " << product_odd << endl;
-
-  return;
+  for (int i = 0; i < n; i++)
+  {
+    delete[] array[i];
+  }
+  delete[] array;
 }
 
 void help()
