@@ -1,0 +1,105 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "LR4",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Task_1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Task_1-Release-cac7b2931d0c79ee3b85.json",
+					"name" : "Task_1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Task_2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Task_2-Release-130b3bf9ec88cf799863.json",
+					"name" : "Task_2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Task_3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Task_3-Release-6b6d3f6ac94e473ba7b6.json",
+					"name" : "Task_3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Task_4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Task_4-Release-f12aff4b324ef133089c.json",
+					"name" : "Task_4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Task_5::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Task_5-Release-a2b4bf1c858e96a16724.json",
+					"name" : "Task_5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Task_6::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Task_6-Release-b76276a7801f72495ce1.json",
+					"name" : "Task_6",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/valeriayurhilevich/\u0423\u0447\u0435\u0431\u0430/553503/O\u0410\u0438\u041f/LR4/build",
+		"source" : "/Users/valeriayurhilevich/\u0423\u0447\u0435\u0431\u0430/553503/O\u0410\u0438\u041f/LR4"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}
