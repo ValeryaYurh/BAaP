@@ -19,9 +19,9 @@
 },
 {
   "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build",
-  "command": "/usr/bin/clang++   -O3 -DNDEBUG -std=gnu++11 -arch arm64 -o CMakeFiles/Task_4.dir/LabWork4_PartC/Task_4/Task_4.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/LabWork4_PartC/Task_4/Task_4.cpp",
-  "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/LabWork4_PartC/Task_4/Task_4.cpp",
-  "output": "CMakeFiles/Task_4.dir/LabWork4_PartC/Task_4/Task_4.cpp.o"
+  "command": "/usr/bin/clang   -O3 -DNDEBUG -arch arm64 -o CMakeFiles/Task_4.dir/LabWork4_PartC/Task_4/Task_4.c.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/LabWork4_PartC/Task_4/Task_4.c",
+  "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/LabWork4_PartC/Task_4/Task_4.c",
+  "output": "CMakeFiles/Task_4.dir/LabWork4_PartC/Task_4/Task_4.c.o"
 },
 {
   "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build",

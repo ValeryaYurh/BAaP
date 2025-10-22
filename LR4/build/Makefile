@@ -194,29 +194,29 @@ Task_6/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_6.dir/build.make CMakeFiles/Task_6.dir/build
 .PHONY : Task_6/fast
 
-LabWork4_PartC/Task_4/Task_4.o: LabWork4_PartC/Task_4/Task_4.cpp.o
+LabWork4_PartC/Task_4/Task_4.o: LabWork4_PartC/Task_4/Task_4.c.o
 .PHONY : LabWork4_PartC/Task_4/Task_4.o
 
 # target to build an object file
-LabWork4_PartC/Task_4/Task_4.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_4.dir/build.make CMakeFiles/Task_4.dir/LabWork4_PartC/Task_4/Task_4.cpp.o
-.PHONY : LabWork4_PartC/Task_4/Task_4.cpp.o
+LabWork4_PartC/Task_4/Task_4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_4.dir/build.make CMakeFiles/Task_4.dir/LabWork4_PartC/Task_4/Task_4.c.o
+.PHONY : LabWork4_PartC/Task_4/Task_4.c.o
 
-LabWork4_PartC/Task_4/Task_4.i: LabWork4_PartC/Task_4/Task_4.cpp.i
+LabWork4_PartC/Task_4/Task_4.i: LabWork4_PartC/Task_4/Task_4.c.i
 .PHONY : LabWork4_PartC/Task_4/Task_4.i
 
 # target to preprocess a source file
-LabWork4_PartC/Task_4/Task_4.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_4.dir/build.make CMakeFiles/Task_4.dir/LabWork4_PartC/Task_4/Task_4.cpp.i
-.PHONY : LabWork4_PartC/Task_4/Task_4.cpp.i
+LabWork4_PartC/Task_4/Task_4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_4.dir/build.make CMakeFiles/Task_4.dir/LabWork4_PartC/Task_4/Task_4.c.i
+.PHONY : LabWork4_PartC/Task_4/Task_4.c.i
 
-LabWork4_PartC/Task_4/Task_4.s: LabWork4_PartC/Task_4/Task_4.cpp.s
+LabWork4_PartC/Task_4/Task_4.s: LabWork4_PartC/Task_4/Task_4.c.s
 .PHONY : LabWork4_PartC/Task_4/Task_4.s
 
 # target to generate assembly for a file
-LabWork4_PartC/Task_4/Task_4.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_4.dir/build.make CMakeFiles/Task_4.dir/LabWork4_PartC/Task_4/Task_4.cpp.s
-.PHONY : LabWork4_PartC/Task_4/Task_4.cpp.s
+LabWork4_PartC/Task_4/Task_4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_4.dir/build.make CMakeFiles/Task_4.dir/LabWork4_PartC/Task_4/Task_4.c.s
+.PHONY : LabWork4_PartC/Task_4/Task_4.c.s
 
 LabWork4_PartC/Task_5/Task_5.o: LabWork4_PartC/Task_5/Task_5.cpp.o
 .PHONY : LabWork4_PartC/Task_5/Task_5.o

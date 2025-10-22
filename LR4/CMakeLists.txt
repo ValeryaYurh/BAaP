@@ -13,7 +13,7 @@ add_executable(Task_2 Task_2/Task_2.cpp)
 add_executable(Task_3 Task_3/Task_3.cpp)
 
 # Для Task_4
-add_executable(Task_4 LabWork4_PartC/Task_4/Task_4.cpp)
+add_executable(Task_4 LabWork4_PartC/Task_4/Task_4.c)
 
 # Для Task_5
 add_executable(Task_5 LabWork4_PartC/Task_5/Task_5.cpp)
