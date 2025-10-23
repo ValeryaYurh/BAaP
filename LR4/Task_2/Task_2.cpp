@@ -10,7 +10,7 @@ using namespace std;
 
 void sum()
 {
-  int m, n, k;
+  int m, n;
   cout << BBLUE << "Введите M(количесиво элементов массива): ";
   cin >> m;
   if(m<=0) 
@@ -25,7 +25,7 @@ void sum()
     cout << BRED << "Число должно быть строго больше нуля. Измените значение: ";
     cin >> n;
   }
-  int array[m][n];
+  int array[100][100];
   cout << BYELLOW << "Ввести элементы подмассива: " << endl; 
   for(int i = 0; i < m; i++)
   {
