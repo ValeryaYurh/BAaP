@@ -1,4 +1,5 @@
 #include <iostream>
+#include "get_sum_odd.h"
 using namespace std;
 
 #define BRED "\033[91m"
@@ -42,27 +43,18 @@ void sum()
       cout << array[i][j] << " ";
     }
   }
-  long long sum_even = 0;
-  long long product_odd = 1;
+  int *flat_array = new int[n * n];
   for (int i = 0; i < n; i++)
-  {
     for (int j = 0; j < n; j++)
-    {
-      if (i >= j or i + j >= n - 1)
-      {
-        sum_even += array[i][j];
-        product_odd *= array[i][j];
-      }
-    }
-  }
+      flat_array[i * n + j] = array[i][j];
+
   cout << GREEN << "\n"
-       << "Сумма элементов равна: " << sum_even << endl
-       << "Произведение равно: " << product_odd << endl;
-  
+       << "Сумма элементов равна: " << get_sum(flat_array, n, n) << endl
+       << "Произведение равно: " << get_odd(flat_array, n, n) << endl;
+
+  delete[] flat_array;
   for (int i = 0; i < n; i++)
-  {
     delete[] array[i];
-  }
   delete[] array;
 }
 
@@ -78,7 +70,7 @@ int main()
   cout << BBLUE << "Добро пожаловать!" << endl
        << "Данный проект подготовлен Юргилевич Валерией" << RESET << endl
        << "Вариант 15" << endl
-       << BYELLOW << "В данном проекте нужно инициализировать при объявлении статический двумерный массив целых чисел размером MxN. Подсчитать сумму четных элементов и произведение нечётных элементов матрицы и вывести на экран исходные данные и полученный результат." << RESET << endl
+       << BYELLOW << "Дана действительная квадратная матрица порядка N. Найти сумму и произведение элементов, расположенных в заштрихованной части матрицы, см. рисунок «в»." << RESET << endl
        << "Введите" << BBLUE << " calc" << RESET << ", если хотите вывести значение;" << BBLUE << " help" << RESET << ", если нужна дополнительная информация" << endl
        << "Если хотитие закончить проект, введите" << BBLUE << " quit или exit" << endl;
   while (true)

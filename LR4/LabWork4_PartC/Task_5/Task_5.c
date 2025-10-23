@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "num_mine.h"
 
 #define BRED "\033[91m"
 #define GREEN "\033[32m"
@@ -54,18 +55,7 @@ void sum(void)
     {
         for (int j = 0; j < m; j++)
         {
-            int k = 0; // количество мин
-            if (array[i][j] == '.')
-            {
-                if (j + 1 < m && array[i][j + 1] == '*') ++k;
-                if (i + 1 < n && j + 1 < m && array[i + 1][j + 1] == '*') ++k;
-                if (i + 1 < n && array[i + 1][j] == '*') ++k;
-                if (i - 1 >= 0 && j - 1 >= 0 && array[i - 1][j - 1] == '*') ++k;
-                if (j - 1 >= 0 && array[i][j - 1] == '*') ++k;
-                if (i - 1 >= 0 && j + 1 < m && array[i - 1][j + 1] == '*') ++k;
-                if (i - 1 >= 0 && array[i - 1][j] == '*') ++k;
-                if (i + 1 < n && j - 1 >= 0 && array[i + 1][j - 1] == '*') ++k;
-            }
+            int k = num_mine(array, m, n, i, j);
             if (k > 0)
                 array[i][j] = k + '0';
         }

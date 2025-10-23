@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Task_2.dir/Task_2/Task_2.cpp.o"
   "CMakeFiles/Task_2.dir/Task_2/Task_2.cpp.o.d"
+  "CMakeFiles/Task_2.dir/Task_2/sumodd.cpp.o"
+  "CMakeFiles/Task_2.dir/Task_2/sumodd.cpp.o.d"
   "Task_2"
   "Task_2.pdb"
 )

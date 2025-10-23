@@ -1,4 +1,5 @@
 #include <iostream>
+#include "sumodd.h"
 using namespace std;
 
 #define BRED "\033[91m"
@@ -43,24 +44,10 @@ void sum()
        cout << array[i][j] << " ";
     }
   }
-  int sum_even = 0;
-  int product_odd = 1;
-  for(int i = 0; i < m; i++)
-  {
-    for(int j=0; j < n; j++)
-    {
-        if(array[i][j]%2 == 0)
-       {
-        sum_even+=array[i][j];
-       }else if(array[i][j]%2 != 0)
-       {
-        product_odd *= array[i][j];
-       }
-    }
-  }
+
   cout << GREEN << "\n"
-       <<"Сумма чётных элементов равна: " << sum_even << endl
-       << "Произведение нечётных равно: " << product_odd << endl;
+       <<"Сумма чётных элементов равна: " << get_even_sum(*array, m, n) << endl
+       << "Произведение нечётных равно: " << get_odd_product(*array, m, n) << endl;
 
   return;
 }

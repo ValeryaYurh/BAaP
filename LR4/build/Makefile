@@ -65,6 +65,16 @@ CMAKE_BINARY_DIR = /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	/opt/homebrew/bin/ctest $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -84,6 +94,51 @@ rebuild_cache:
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/opt/homebrew/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/opt/homebrew/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -194,6 +249,71 @@ Task_6/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_6.dir/build.make CMakeFiles/Task_6.dir/build
 .PHONY : Task_6/fast
 
+#=============================================================================
+# Target rules for targets named gtests
+
+# Build rule for target.
+gtests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtests
+.PHONY : gtests
+
+# fast build rule for target.
+gtests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtests.dir/build.make CMakeFiles/gtests.dir/build
+.PHONY : gtests/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
 LabWork4_PartC/Task_4/Task_4.o: LabWork4_PartC/Task_4/Task_4.c.o
 .PHONY : LabWork4_PartC/Task_4/Task_4.o
 
@@ -217,6 +337,33 @@ LabWork4_PartC/Task_4/Task_4.s: LabWork4_PartC/Task_4/Task_4.c.s
 LabWork4_PartC/Task_4/Task_4.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_4.dir/build.make CMakeFiles/Task_4.dir/LabWork4_PartC/Task_4/Task_4.c.s
 .PHONY : LabWork4_PartC/Task_4/Task_4.c.s
+
+LabWork4_PartC/Task_4/max_diag.o: LabWork4_PartC/Task_4/max_diag.c.o
+.PHONY : LabWork4_PartC/Task_4/max_diag.o
+
+# target to build an object file
+LabWork4_PartC/Task_4/max_diag.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_4.dir/build.make CMakeFiles/Task_4.dir/LabWork4_PartC/Task_4/max_diag.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtests.dir/build.make CMakeFiles/gtests.dir/LabWork4_PartC/Task_4/max_diag.c.o
+.PHONY : LabWork4_PartC/Task_4/max_diag.c.o
+
+LabWork4_PartC/Task_4/max_diag.i: LabWork4_PartC/Task_4/max_diag.c.i
+.PHONY : LabWork4_PartC/Task_4/max_diag.i
+
+# target to preprocess a source file
+LabWork4_PartC/Task_4/max_diag.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_4.dir/build.make CMakeFiles/Task_4.dir/LabWork4_PartC/Task_4/max_diag.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtests.dir/build.make CMakeFiles/gtests.dir/LabWork4_PartC/Task_4/max_diag.c.i
+.PHONY : LabWork4_PartC/Task_4/max_diag.c.i
+
+LabWork4_PartC/Task_4/max_diag.s: LabWork4_PartC/Task_4/max_diag.c.s
+.PHONY : LabWork4_PartC/Task_4/max_diag.s
+
+# target to generate assembly for a file
+LabWork4_PartC/Task_4/max_diag.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_4.dir/build.make CMakeFiles/Task_4.dir/LabWork4_PartC/Task_4/max_diag.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtests.dir/build.make CMakeFiles/gtests.dir/LabWork4_PartC/Task_4/max_diag.c.s
+.PHONY : LabWork4_PartC/Task_4/max_diag.c.s
 
 LabWork4_PartC/Task_5/Task_5.o: LabWork4_PartC/Task_5/Task_5.c.o
 .PHONY : LabWork4_PartC/Task_5/Task_5.o
@@ -242,6 +389,33 @@ LabWork4_PartC/Task_5/Task_5.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_5.dir/build.make CMakeFiles/Task_5.dir/LabWork4_PartC/Task_5/Task_5.c.s
 .PHONY : LabWork4_PartC/Task_5/Task_5.c.s
 
+LabWork4_PartC/Task_5/num_mine.o: LabWork4_PartC/Task_5/num_mine.c.o
+.PHONY : LabWork4_PartC/Task_5/num_mine.o
+
+# target to build an object file
+LabWork4_PartC/Task_5/num_mine.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_5.dir/build.make CMakeFiles/Task_5.dir/LabWork4_PartC/Task_5/num_mine.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtests.dir/build.make CMakeFiles/gtests.dir/LabWork4_PartC/Task_5/num_mine.c.o
+.PHONY : LabWork4_PartC/Task_5/num_mine.c.o
+
+LabWork4_PartC/Task_5/num_mine.i: LabWork4_PartC/Task_5/num_mine.c.i
+.PHONY : LabWork4_PartC/Task_5/num_mine.i
+
+# target to preprocess a source file
+LabWork4_PartC/Task_5/num_mine.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_5.dir/build.make CMakeFiles/Task_5.dir/LabWork4_PartC/Task_5/num_mine.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtests.dir/build.make CMakeFiles/gtests.dir/LabWork4_PartC/Task_5/num_mine.c.i
+.PHONY : LabWork4_PartC/Task_5/num_mine.c.i
+
+LabWork4_PartC/Task_5/num_mine.s: LabWork4_PartC/Task_5/num_mine.c.s
+.PHONY : LabWork4_PartC/Task_5/num_mine.s
+
+# target to generate assembly for a file
+LabWork4_PartC/Task_5/num_mine.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_5.dir/build.make CMakeFiles/Task_5.dir/LabWork4_PartC/Task_5/num_mine.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtests.dir/build.make CMakeFiles/gtests.dir/LabWork4_PartC/Task_5/num_mine.c.s
+.PHONY : LabWork4_PartC/Task_5/num_mine.c.s
+
 LabWork4_PartC/Task_6/Task_6.o: LabWork4_PartC/Task_6/Task_6.c.o
 .PHONY : LabWork4_PartC/Task_6/Task_6.o
 
@@ -265,6 +439,33 @@ LabWork4_PartC/Task_6/Task_6.s: LabWork4_PartC/Task_6/Task_6.c.s
 LabWork4_PartC/Task_6/Task_6.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_6.dir/build.make CMakeFiles/Task_6.dir/LabWork4_PartC/Task_6/Task_6.c.s
 .PHONY : LabWork4_PartC/Task_6/Task_6.c.s
+
+LabWork4_PartC/Task_6/magic_square.o: LabWork4_PartC/Task_6/magic_square.c.o
+.PHONY : LabWork4_PartC/Task_6/magic_square.o
+
+# target to build an object file
+LabWork4_PartC/Task_6/magic_square.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_6.dir/build.make CMakeFiles/Task_6.dir/LabWork4_PartC/Task_6/magic_square.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtests.dir/build.make CMakeFiles/gtests.dir/LabWork4_PartC/Task_6/magic_square.c.o
+.PHONY : LabWork4_PartC/Task_6/magic_square.c.o
+
+LabWork4_PartC/Task_6/magic_square.i: LabWork4_PartC/Task_6/magic_square.c.i
+.PHONY : LabWork4_PartC/Task_6/magic_square.i
+
+# target to preprocess a source file
+LabWork4_PartC/Task_6/magic_square.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_6.dir/build.make CMakeFiles/Task_6.dir/LabWork4_PartC/Task_6/magic_square.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtests.dir/build.make CMakeFiles/gtests.dir/LabWork4_PartC/Task_6/magic_square.c.i
+.PHONY : LabWork4_PartC/Task_6/magic_square.c.i
+
+LabWork4_PartC/Task_6/magic_square.s: LabWork4_PartC/Task_6/magic_square.c.s
+.PHONY : LabWork4_PartC/Task_6/magic_square.s
+
+# target to generate assembly for a file
+LabWork4_PartC/Task_6/magic_square.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_6.dir/build.make CMakeFiles/Task_6.dir/LabWork4_PartC/Task_6/magic_square.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtests.dir/build.make CMakeFiles/gtests.dir/LabWork4_PartC/Task_6/magic_square.c.s
+.PHONY : LabWork4_PartC/Task_6/magic_square.c.s
 
 Task_1/Task_1.o: Task_1/Task_1.cpp.o
 .PHONY : Task_1/Task_1.o
@@ -290,6 +491,33 @@ Task_1/Task_1.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_1.dir/build.make CMakeFiles/Task_1.dir/Task_1/Task_1.cpp.s
 .PHONY : Task_1/Task_1.cpp.s
 
+Task_1/dubelems.o: Task_1/dubelems.cpp.o
+.PHONY : Task_1/dubelems.o
+
+# target to build an object file
+Task_1/dubelems.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_1.dir/build.make CMakeFiles/Task_1.dir/Task_1/dubelems.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtests.dir/build.make CMakeFiles/gtests.dir/Task_1/dubelems.cpp.o
+.PHONY : Task_1/dubelems.cpp.o
+
+Task_1/dubelems.i: Task_1/dubelems.cpp.i
+.PHONY : Task_1/dubelems.i
+
+# target to preprocess a source file
+Task_1/dubelems.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_1.dir/build.make CMakeFiles/Task_1.dir/Task_1/dubelems.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtests.dir/build.make CMakeFiles/gtests.dir/Task_1/dubelems.cpp.i
+.PHONY : Task_1/dubelems.cpp.i
+
+Task_1/dubelems.s: Task_1/dubelems.cpp.s
+.PHONY : Task_1/dubelems.s
+
+# target to generate assembly for a file
+Task_1/dubelems.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_1.dir/build.make CMakeFiles/Task_1.dir/Task_1/dubelems.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtests.dir/build.make CMakeFiles/gtests.dir/Task_1/dubelems.cpp.s
+.PHONY : Task_1/dubelems.cpp.s
+
 Task_2/Task_2.o: Task_2/Task_2.cpp.o
 .PHONY : Task_2/Task_2.o
 
@@ -313,6 +541,33 @@ Task_2/Task_2.s: Task_2/Task_2.cpp.s
 Task_2/Task_2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_2.dir/build.make CMakeFiles/Task_2.dir/Task_2/Task_2.cpp.s
 .PHONY : Task_2/Task_2.cpp.s
+
+Task_2/sumodd.o: Task_2/sumodd.cpp.o
+.PHONY : Task_2/sumodd.o
+
+# target to build an object file
+Task_2/sumodd.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_2.dir/build.make CMakeFiles/Task_2.dir/Task_2/sumodd.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtests.dir/build.make CMakeFiles/gtests.dir/Task_2/sumodd.cpp.o
+.PHONY : Task_2/sumodd.cpp.o
+
+Task_2/sumodd.i: Task_2/sumodd.cpp.i
+.PHONY : Task_2/sumodd.i
+
+# target to preprocess a source file
+Task_2/sumodd.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_2.dir/build.make CMakeFiles/Task_2.dir/Task_2/sumodd.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtests.dir/build.make CMakeFiles/gtests.dir/Task_2/sumodd.cpp.i
+.PHONY : Task_2/sumodd.cpp.i
+
+Task_2/sumodd.s: Task_2/sumodd.cpp.s
+.PHONY : Task_2/sumodd.s
+
+# target to generate assembly for a file
+Task_2/sumodd.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_2.dir/build.make CMakeFiles/Task_2.dir/Task_2/sumodd.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtests.dir/build.make CMakeFiles/gtests.dir/Task_2/sumodd.cpp.s
+.PHONY : Task_2/sumodd.cpp.s
 
 Task_3/Task_3.o: Task_3/Task_3.cpp.o
 .PHONY : Task_3/Task_3.o
@@ -338,6 +593,57 @@ Task_3/Task_3.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_3.dir/build.make CMakeFiles/Task_3.dir/Task_3/Task_3.cpp.s
 .PHONY : Task_3/Task_3.cpp.s
 
+Task_3/get_sum_odd.o: Task_3/get_sum_odd.cpp.o
+.PHONY : Task_3/get_sum_odd.o
+
+# target to build an object file
+Task_3/get_sum_odd.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_3.dir/build.make CMakeFiles/Task_3.dir/Task_3/get_sum_odd.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtests.dir/build.make CMakeFiles/gtests.dir/Task_3/get_sum_odd.cpp.o
+.PHONY : Task_3/get_sum_odd.cpp.o
+
+Task_3/get_sum_odd.i: Task_3/get_sum_odd.cpp.i
+.PHONY : Task_3/get_sum_odd.i
+
+# target to preprocess a source file
+Task_3/get_sum_odd.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_3.dir/build.make CMakeFiles/Task_3.dir/Task_3/get_sum_odd.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtests.dir/build.make CMakeFiles/gtests.dir/Task_3/get_sum_odd.cpp.i
+.PHONY : Task_3/get_sum_odd.cpp.i
+
+Task_3/get_sum_odd.s: Task_3/get_sum_odd.cpp.s
+.PHONY : Task_3/get_sum_odd.s
+
+# target to generate assembly for a file
+Task_3/get_sum_odd.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_3.dir/build.make CMakeFiles/Task_3.dir/Task_3/get_sum_odd.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtests.dir/build.make CMakeFiles/gtests.dir/Task_3/get_sum_odd.cpp.s
+.PHONY : Task_3/get_sum_odd.cpp.s
+
+gtests/gtests.o: gtests/gtests.cpp.o
+.PHONY : gtests/gtests.o
+
+# target to build an object file
+gtests/gtests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtests.dir/build.make CMakeFiles/gtests.dir/gtests/gtests.cpp.o
+.PHONY : gtests/gtests.cpp.o
+
+gtests/gtests.i: gtests/gtests.cpp.i
+.PHONY : gtests/gtests.i
+
+# target to preprocess a source file
+gtests/gtests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtests.dir/build.make CMakeFiles/gtests.dir/gtests/gtests.cpp.i
+.PHONY : gtests/gtests.cpp.i
+
+gtests/gtests.s: gtests/gtests.cpp.s
+.PHONY : gtests/gtests.s
+
+# target to generate assembly for a file
+gtests/gtests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtests.dir/build.make CMakeFiles/gtests.dir/gtests/gtests.cpp.s
+.PHONY : gtests/gtests.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -345,31 +651,62 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... test"
 	@echo "... Task_1"
 	@echo "... Task_2"
 	@echo "... Task_3"
 	@echo "... Task_4"
 	@echo "... Task_5"
 	@echo "... Task_6"
+	@echo "... gmock"
+	@echo "... gmock_main"
+	@echo "... gtest"
+	@echo "... gtest_main"
+	@echo "... gtests"
 	@echo "... LabWork4_PartC/Task_4/Task_4.o"
 	@echo "... LabWork4_PartC/Task_4/Task_4.i"
 	@echo "... LabWork4_PartC/Task_4/Task_4.s"
+	@echo "... LabWork4_PartC/Task_4/max_diag.o"
+	@echo "... LabWork4_PartC/Task_4/max_diag.i"
+	@echo "... LabWork4_PartC/Task_4/max_diag.s"
 	@echo "... LabWork4_PartC/Task_5/Task_5.o"
 	@echo "... LabWork4_PartC/Task_5/Task_5.i"
 	@echo "... LabWork4_PartC/Task_5/Task_5.s"
+	@echo "... LabWork4_PartC/Task_5/num_mine.o"
+	@echo "... LabWork4_PartC/Task_5/num_mine.i"
+	@echo "... LabWork4_PartC/Task_5/num_mine.s"
 	@echo "... LabWork4_PartC/Task_6/Task_6.o"
 	@echo "... LabWork4_PartC/Task_6/Task_6.i"
 	@echo "... LabWork4_PartC/Task_6/Task_6.s"
+	@echo "... LabWork4_PartC/Task_6/magic_square.o"
+	@echo "... LabWork4_PartC/Task_6/magic_square.i"
+	@echo "... LabWork4_PartC/Task_6/magic_square.s"
 	@echo "... Task_1/Task_1.o"
 	@echo "... Task_1/Task_1.i"
 	@echo "... Task_1/Task_1.s"
+	@echo "... Task_1/dubelems.o"
+	@echo "... Task_1/dubelems.i"
+	@echo "... Task_1/dubelems.s"
 	@echo "... Task_2/Task_2.o"
 	@echo "... Task_2/Task_2.i"
 	@echo "... Task_2/Task_2.s"
+	@echo "... Task_2/sumodd.o"
+	@echo "... Task_2/sumodd.i"
+	@echo "... Task_2/sumodd.s"
 	@echo "... Task_3/Task_3.o"
 	@echo "... Task_3/Task_3.i"
 	@echo "... Task_3/Task_3.s"
+	@echo "... Task_3/get_sum_odd.o"
+	@echo "... Task_3/get_sum_odd.i"
+	@echo "... Task_3/get_sum_odd.s"
+	@echo "... gtests/gtests.o"
+	@echo "... gtests/gtests.i"
+	@echo "... gtests/gtests.s"
 .PHONY : help
 
 

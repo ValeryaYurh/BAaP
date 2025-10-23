@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/Task_3/Task_3.cpp" "CMakeFiles/Task_3.dir/Task_3/Task_3.cpp.o" "gcc" "CMakeFiles/Task_3.dir/Task_3/Task_3.cpp.o.d"
+  "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/Task_3/get_sum_odd.cpp" "CMakeFiles/Task_3.dir/Task_3/get_sum_odd.cpp.o" "gcc" "CMakeFiles/Task_3.dir/Task_3/get_sum_odd.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

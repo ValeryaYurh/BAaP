@@ -93,8 +93,14 @@ CMakeFiles/Task_5.dir/LabWork4_PartC/Task_5/Task_5.c.o: /Users/valeriayurhilevic
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/wait.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
+  /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/LabWork4_PartC/Task_5/num_mine.h
 
+CMakeFiles/Task_5.dir/LabWork4_PartC/Task_5/num_mine.c.o: /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/LabWork4_PartC/Task_5/num_mine.c \
+  /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/LabWork4_PartC/Task_5/num_mine.h
+
+
+/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/LabWork4_PartC/Task_5/num_mine.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stdio.h:
 
@@ -269,6 +275,8 @@ CMakeFiles/Task_5.dir/LabWork4_PartC/Task_5/Task_5.c.o: /Users/valeriayurhilevic
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdio.h:
+
+/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/LabWork4_PartC/Task_5/num_mine.c:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_rsize_t.h:
 

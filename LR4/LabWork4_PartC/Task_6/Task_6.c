@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 #include <string.h>
+#include "magic_square.h"
 
 #define BRED "\033[91m"
 #define GREEN "\033[32m"
@@ -9,78 +9,32 @@
 #define RESET "\033[0m"
 #define BYELLOW "\033[93m"
 
+// Функция для ввода n и вывода магического квадрата
 void sum()
 {
   int n;
   printf(BBLUE "Введите порядок квадрата N(нечётное число): " RESET);
   scanf("%d", &n);
 
-  if (n <= 0 || n > (pow(2, 32) - 1) || n % 2 == 0)
+  while (n <= 0 || n % 2 == 0)
   {
-    while(n<=0 || n%2==0){
     printf(BRED "Число должно быть нечётное и строго больше нуля. Измените значение: " RESET);
     scanf("%d", &n);
-    }
   }
 
-  int **array = (int **)malloc(n * sizeof(int *));
-  for (int i = 0; i < n; i++)
+  int **array = magic_square(n);
+  if (!array)
   {
-    array[i] = (int *)malloc(n * sizeof(int));
-  }
-
-  for (int i = 0; i < n; i++)
-  {
-    for (int j = 0; j < n; j++)
-    {
-      array[i][j] = 0;
-    }
-  }
-
-  int i = n / 2;
-  int j = n - 1;
-
-  for (int num = 1; num <= n * n;)
-  {
-    if (i == -1 && j == n)
-    {
-      i = 0;
-      j = n - 2;
-    }
-    else
-    {
-      if (i < 0)
-        i = n - 1;
-      if (j == n)
-        j = 0;
-    }
-
-    if (array[i][j] != 0)
-    {
-      i += 1;
-      j -= 2;
-      continue;
-    }
-    else
-    {
-      array[i][j] = num++;
-      i -= 1;
-      j += 1;
-    }
+    printf(BRED "Ошибка при создании магического квадрата.\n" RESET);
+    return;
   }
 
   printf(GREEN "\nМагический квадрат:\n" RESET);
-  for (int x = 0; x < n; x++)
-  {
-    for (int y = 0; y < n; y++)
-    {
-      printf("%4d ", array[x][y]);
-    }
-    printf("\n");
-  }
-
   for (int i = 0; i < n; i++)
   {
+    for (int j = 0; j < n; j++)
+      printf("%4d ", array[i][j]);
+    printf("\n");
     free(array[i]);
   }
   free(array);
@@ -97,7 +51,7 @@ int main()
 {
   printf(BBLUE "Добро пожаловать!\n" RESET);
   printf("Данный проект подготовлен Юргилевич Валерией\n");
-  printf(BYELLOW "Построить магический квадрат. Порядок квадрата задаётся пользователем. Максимальный размер магического квадрата не превышает 2^32 - 1.\n" RESET);
+  printf(BYELLOW "Построить магический квадрат. Порядок квадрата задаётся пользователем.\n" RESET);
   printf("Введите " BBLUE "calc" RESET ", если хотите вывести значение; ");
   printf(BBLUE "help" RESET ", если нужна дополнительная информация\n");
   printf("Если хотите закончить проект, введите " BBLUE "quit" RESET " или " BBLUE "exit\n" RESET);

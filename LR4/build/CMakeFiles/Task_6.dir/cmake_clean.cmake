@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Task_6.dir/LabWork4_PartC/Task_6/Task_6.c.o"
   "CMakeFiles/Task_6.dir/LabWork4_PartC/Task_6/Task_6.c.o.d"
+  "CMakeFiles/Task_6.dir/LabWork4_PartC/Task_6/magic_square.c.o"
+  "CMakeFiles/Task_6.dir/LabWork4_PartC/Task_6/magic_square.c.o.d"
   "Task_6"
   "Task_6.pdb"
 )

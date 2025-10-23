@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "max_diag.h"
 
 #define BRED "\033[91m"
 #define GREEN "\033[32m"
@@ -18,7 +19,7 @@ void sum() {
         scanf("%d", &n);
     }
     
-    // Выделение памяти для 3D массива
+
     int ***array = (int ***)malloc(n * sizeof(int **));
     for (int i = 0; i < n; ++i) {
         array[i] = (int **)malloc(n * sizeof(int *));
@@ -76,14 +77,7 @@ void sum() {
     diags[2] = sum_diag3;
     diags[3] = sum_diag4;
 
-    max_diag = diags[0];
-    for (int i = 1; i < 4; i++) {
-        if (diags[i] > max_diag) {
-            max_diag = diags[i];
-        }
-    }
-
-    printf(GREEN "\nНаибольшая диагональ равна: %lld\n", max_diag);
+    printf(GREEN "\nНаибольшая диагональ равна: %lld\n", max_d(diags, 4));
     
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {

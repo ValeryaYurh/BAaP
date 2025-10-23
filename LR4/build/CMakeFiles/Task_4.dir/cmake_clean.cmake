@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Task_4.dir/LabWork4_PartC/Task_4/Task_4.c.o"
   "CMakeFiles/Task_4.dir/LabWork4_PartC/Task_4/Task_4.c.o.d"
+  "CMakeFiles/Task_4.dir/LabWork4_PartC/Task_4/max_diag.c.o"
+  "CMakeFiles/Task_4.dir/LabWork4_PartC/Task_4/max_diag.c.o.d"
   "Task_4"
   "Task_4.pdb"
 )

@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/Task_2/Task_2.cpp" "CMakeFiles/Task_2.dir/Task_2/Task_2.cpp.o" "gcc" "CMakeFiles/Task_2.dir/Task_2/Task_2.cpp.o.d"
+  "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/Task_2/sumodd.cpp" "CMakeFiles/Task_2.dir/Task_2/sumodd.cpp.o" "gcc" "CMakeFiles/Task_2.dir/Task_2/sumodd.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

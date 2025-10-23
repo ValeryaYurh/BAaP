@@ -7,9 +7,21 @@
 },
 {
   "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build",
+  "command": "/usr/bin/clang++   -O3 -DNDEBUG -std=gnu++11 -arch arm64 -o CMakeFiles/Task_1.dir/Task_1/dubelems.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/Task_1/dubelems.cpp",
+  "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/Task_1/dubelems.cpp",
+  "output": "CMakeFiles/Task_1.dir/Task_1/dubelems.cpp.o"
+},
+{
+  "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build",
   "command": "/usr/bin/clang++   -O3 -DNDEBUG -std=gnu++11 -arch arm64 -o CMakeFiles/Task_2.dir/Task_2/Task_2.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/Task_2/Task_2.cpp",
   "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/Task_2/Task_2.cpp",
   "output": "CMakeFiles/Task_2.dir/Task_2/Task_2.cpp.o"
+},
+{
+  "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build",
+  "command": "/usr/bin/clang++   -O3 -DNDEBUG -std=gnu++11 -arch arm64 -o CMakeFiles/Task_2.dir/Task_2/sumodd.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/Task_2/sumodd.cpp",
+  "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/Task_2/sumodd.cpp",
+  "output": "CMakeFiles/Task_2.dir/Task_2/sumodd.cpp.o"
 },
 {
   "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build",
@@ -19,9 +31,21 @@
 },
 {
   "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build",
+  "command": "/usr/bin/clang++   -O3 -DNDEBUG -std=gnu++11 -arch arm64 -o CMakeFiles/Task_3.dir/Task_3/get_sum_odd.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/Task_3/get_sum_odd.cpp",
+  "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/Task_3/get_sum_odd.cpp",
+  "output": "CMakeFiles/Task_3.dir/Task_3/get_sum_odd.cpp.o"
+},
+{
+  "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build",
   "command": "/usr/bin/clang   -O3 -DNDEBUG -arch arm64 -o CMakeFiles/Task_4.dir/LabWork4_PartC/Task_4/Task_4.c.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/LabWork4_PartC/Task_4/Task_4.c",
   "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/LabWork4_PartC/Task_4/Task_4.c",
   "output": "CMakeFiles/Task_4.dir/LabWork4_PartC/Task_4/Task_4.c.o"
+},
+{
+  "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build",
+  "command": "/usr/bin/clang   -O3 -DNDEBUG -arch arm64 -o CMakeFiles/Task_4.dir/LabWork4_PartC/Task_4/max_diag.c.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/LabWork4_PartC/Task_4/max_diag.c",
+  "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/LabWork4_PartC/Task_4/max_diag.c",
+  "output": "CMakeFiles/Task_4.dir/LabWork4_PartC/Task_4/max_diag.c.o"
 },
 {
   "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build",
@@ -31,8 +55,86 @@
 },
 {
   "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build",
+  "command": "/usr/bin/clang   -O3 -DNDEBUG -arch arm64 -o CMakeFiles/Task_5.dir/LabWork4_PartC/Task_5/num_mine.c.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/LabWork4_PartC/Task_5/num_mine.c",
+  "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/LabWork4_PartC/Task_5/num_mine.c",
+  "output": "CMakeFiles/Task_5.dir/LabWork4_PartC/Task_5/num_mine.c.o"
+},
+{
+  "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build",
   "command": "/usr/bin/clang   -O3 -DNDEBUG -arch arm64 -o CMakeFiles/Task_6.dir/LabWork4_PartC/Task_6/Task_6.c.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/LabWork4_PartC/Task_6/Task_6.c",
   "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/LabWork4_PartC/Task_6/Task_6.c",
   "output": "CMakeFiles/Task_6.dir/LabWork4_PartC/Task_6/Task_6.c.o"
+},
+{
+  "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build",
+  "command": "/usr/bin/clang   -O3 -DNDEBUG -arch arm64 -o CMakeFiles/Task_6.dir/LabWork4_PartC/Task_6/magic_square.c.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/LabWork4_PartC/Task_6/magic_square.c",
+  "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/LabWork4_PartC/Task_6/magic_square.c",
+  "output": "CMakeFiles/Task_6.dir/LabWork4_PartC/Task_6/magic_square.c.o"
+},
+{
+  "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build",
+  "command": "/usr/bin/clang++  -isystem /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googletest/include -isystem /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googletest -O3 -DNDEBUG -std=gnu++14 -arch arm64 -o CMakeFiles/gtests.dir/gtests/gtests.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/gtests/gtests.cpp",
+  "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/gtests/gtests.cpp",
+  "output": "CMakeFiles/gtests.dir/gtests/gtests.cpp.o"
+},
+{
+  "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build",
+  "command": "/usr/bin/clang++  -isystem /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googletest/include -isystem /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googletest -O3 -DNDEBUG -std=gnu++14 -arch arm64 -o CMakeFiles/gtests.dir/Task_1/dubelems.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/Task_1/dubelems.cpp",
+  "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/Task_1/dubelems.cpp",
+  "output": "CMakeFiles/gtests.dir/Task_1/dubelems.cpp.o"
+},
+{
+  "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build",
+  "command": "/usr/bin/clang++  -isystem /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googletest/include -isystem /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googletest -O3 -DNDEBUG -std=gnu++14 -arch arm64 -o CMakeFiles/gtests.dir/Task_2/sumodd.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/Task_2/sumodd.cpp",
+  "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/Task_2/sumodd.cpp",
+  "output": "CMakeFiles/gtests.dir/Task_2/sumodd.cpp.o"
+},
+{
+  "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build",
+  "command": "/usr/bin/clang++  -isystem /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googletest/include -isystem /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googletest -O3 -DNDEBUG -std=gnu++14 -arch arm64 -o CMakeFiles/gtests.dir/Task_3/get_sum_odd.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/Task_3/get_sum_odd.cpp",
+  "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/Task_3/get_sum_odd.cpp",
+  "output": "CMakeFiles/gtests.dir/Task_3/get_sum_odd.cpp.o"
+},
+{
+  "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build",
+  "command": "/usr/bin/clang  -isystem /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googletest/include -isystem /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googletest -O3 -DNDEBUG -arch arm64 -o CMakeFiles/gtests.dir/LabWork4_PartC/Task_4/max_diag.c.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/LabWork4_PartC/Task_4/max_diag.c",
+  "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/LabWork4_PartC/Task_4/max_diag.c",
+  "output": "CMakeFiles/gtests.dir/LabWork4_PartC/Task_4/max_diag.c.o"
+},
+{
+  "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build",
+  "command": "/usr/bin/clang  -isystem /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googletest/include -isystem /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googletest -O3 -DNDEBUG -arch arm64 -o CMakeFiles/gtests.dir/LabWork4_PartC/Task_5/num_mine.c.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/LabWork4_PartC/Task_5/num_mine.c",
+  "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/LabWork4_PartC/Task_5/num_mine.c",
+  "output": "CMakeFiles/gtests.dir/LabWork4_PartC/Task_5/num_mine.c.o"
+},
+{
+  "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build",
+  "command": "/usr/bin/clang  -isystem /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googletest/include -isystem /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googletest -O3 -DNDEBUG -arch arm64 -o CMakeFiles/gtests.dir/LabWork4_PartC/Task_6/magic_square.c.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/LabWork4_PartC/Task_6/magic_square.c",
+  "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/LabWork4_PartC/Task_6/magic_square.c",
+  "output": "CMakeFiles/gtests.dir/LabWork4_PartC/Task_6/magic_square.c.o"
+},
+{
+  "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-build/googlemock",
+  "command": "/usr/bin/clang++  -I/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googlemock/include -I/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googlemock -isystem /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googletest/include -isystem /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googletest -O3 -DNDEBUG -std=c++14 -arch arm64  -DGTEST_HAS_PTHREAD=1   -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "output": "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o"
+},
+{
+  "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-build/googlemock",
+  "command": "/usr/bin/clang++  -isystem /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googlemock/include -isystem /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googlemock -isystem /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googletest/include -isystem /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googletest -O3 -DNDEBUG -std=c++14 -arch arm64  -DGTEST_HAS_PTHREAD=1   -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "output": "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o"
+},
+{
+  "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-build/googletest",
+  "command": "/usr/bin/clang++  -I/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googletest/include -I/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googletest -O3 -DNDEBUG -std=c++14 -arch arm64  -DGTEST_HAS_PTHREAD=1   -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "output": "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
+},
+{
+  "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-build/googletest",
+  "command": "/usr/bin/clang++  -isystem /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googletest/include -isystem /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googletest -O3 -DNDEBUG -std=c++14 -arch arm64  -DGTEST_HAS_PTHREAD=1   -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "output": "_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
 }
 ]

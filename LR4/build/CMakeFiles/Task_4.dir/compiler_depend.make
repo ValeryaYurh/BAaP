@@ -93,8 +93,14 @@ CMakeFiles/Task_4.dir/LabWork4_PartC/Task_4/Task_4.c.o: /Users/valeriayurhilevic
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/wait.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
+  /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/LabWork4_PartC/Task_4/max_diag.h
 
+CMakeFiles/Task_4.dir/LabWork4_PartC/Task_4/max_diag.c.o: /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/LabWork4_PartC/Task_4/max_diag.c \
+  /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/LabWork4_PartC/Task_4/max_diag.h
+
+
+/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/LabWork4_PartC/Task_4/max_diag.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stdio.h:
 
@@ -129,6 +135,8 @@ CMakeFiles/Task_4.dir/LabWork4_PartC/Task_4/Task_4.c.o: /Users/valeriayurhilevic
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int64_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int16_t.h:
+
+/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/LabWork4_PartC/Task_4/max_diag.c:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_ct_rune_t.h:
 

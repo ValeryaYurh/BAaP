@@ -779,8 +779,14 @@ CMakeFiles/Task_2.dir/Task_2/Task_2.cpp.o: /Users/valeriayurhilevich/Учеба/
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
+  /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/Task_2/sumodd.h
 
+CMakeFiles/Task_2.dir/Task_2/sumodd.cpp.o: /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/Task_2/sumodd.cpp \
+  /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/Task_2/sumodd.h
+
+
+/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/Task_2/sumodd.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h:
 
@@ -1489,6 +1495,8 @@ CMakeFiles/Task_2.dir/Task_2/Task_2.cpp.o: /Users/valeriayurhilevich/Учеба/
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/data.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:
+
+/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/Task_2/sumodd.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/malloc/_malloc.h:
 

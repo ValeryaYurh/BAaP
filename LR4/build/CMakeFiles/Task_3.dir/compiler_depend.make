@@ -779,8 +779,14 @@ CMakeFiles/Task_3.dir/Task_3/Task_3.cpp.o: /Users/valeriayurhilevich/Учеба/
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
+  /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/Task_3/get_sum_odd.h
 
+CMakeFiles/Task_3.dir/Task_3/get_sum_odd.cpp.o: /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/Task_3/get_sum_odd.cpp \
+  /Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/Task_3/get_sum_odd.h
+
+
+/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/Task_3/get_sum_odd.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h:
 
@@ -1191,6 +1197,8 @@ CMakeFiles/Task_3.dir/Task_3/Task_3.cpp.o: /Users/valeriayurhilevich/Учеба/
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conditional.h:
+
+/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/Task_3/get_sum_odd.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_reference.h:
 

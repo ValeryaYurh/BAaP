@@ -1,0 +1,3 @@
+/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate.dir
+/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-subbuild/CMakeFiles/edit_cache.dir
+/Users/valeriayurhilevich/Учеба/553503/OАиП/LR4/build/_deps/googletest-subbuild/CMakeFiles/rebuild_cache.dir

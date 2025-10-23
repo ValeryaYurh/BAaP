@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Task_3.dir/Task_3/Task_3.cpp.o"
   "CMakeFiles/Task_3.dir/Task_3/Task_3.cpp.o.d"
+  "CMakeFiles/Task_3.dir/Task_3/get_sum_odd.cpp.o"
+  "CMakeFiles/Task_3.dir/Task_3/get_sum_odd.cpp.o.d"
   "Task_3"
   "Task_3.pdb"
 )

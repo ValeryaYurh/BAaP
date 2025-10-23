@@ -1,0 +1,9 @@
+RemoveDuplicatesTest.RemovesDuplicates 13 0.003095
+RemoveDuplicatesTest.AllIdentical 13 0.00366506
+MatrixTest.SmallMatrix 13 0.00260032
+MatrixTest.LargerMatrix 13 0.00250761
+DiagonalSumOddTest.Simple3x3 0 0
+DiagonalSumOddTest.NegativeNumbers 0 0
+DiagonalTest.Simple3x3 0 0
+DiagonalTest.Small2x2 0 0
+---
