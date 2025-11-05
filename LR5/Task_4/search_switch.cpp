@@ -24,8 +24,9 @@ int search(double **array, int n, int k)
             }
         }
     }
+    if(count==0) cout << BRED << " Таких элементов не найдено" << RESET;
     cout << "\n"
-         << "Количество элементов, равных нулю: " << count << RESET << endl;
+         << GREEN << "Количество элементов, равных нулю: " << count << RESET << endl;
     return count;
 }
 
