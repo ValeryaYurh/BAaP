@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/gtest3.dir/Task_3/gtest3.cpp.o CMakeFiles/gtest3.dir/Task_3/res.cpp.o -o gtest3  lib/libgtest_main.a lib/libgtest.a

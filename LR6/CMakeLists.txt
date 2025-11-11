@@ -31,7 +31,7 @@ set(CMAKE_OSX_ARCHITECTURES arm64)
 # ========================================
 add_executable(Task_1 Task_1/Task_1.cpp Task_1/find.cpp)
 add_executable(Task_2 Task_2/Task_2.cpp Task_2/receipt_calc.cpp)
-# add_executable(Task_3 Task_3/Task_3.cpp Task_3/Task_3_func.cpp)
+add_executable(Task_3 Task_3/Task_3.cpp Task_3/res.cpp)
 
 # Можно добавить больше задач по аналогии
 # add_executable(Task_4 src/Task_4.cpp src/Task_4_func.cpp)
@@ -68,3 +68,13 @@ add_executable(
 target_link_libraries(gtest2 GTest::gtest_main)
 include(GoogleTest)
 gtest_discover_tests(gtest2)
+
+add_executable(
+  gtest3
+  Task_3/gtest3.cpp   # tests for Task_1
+  Task_3/res.cpp
+)
+
+target_link_libraries(gtest3 GTest::gtest_main)
+include(GoogleTest)
+gtest_discover_tests(gtest3)

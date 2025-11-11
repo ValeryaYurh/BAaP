@@ -1,0 +1,5 @@
+if(EXISTS "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/build/gtest3[1]_tests.cmake")
+  include("/Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/build/gtest3[1]_tests.cmake")
+else()
+  add_test(gtest3_NOT_BUILT gtest3_NOT_BUILT)
+endif()

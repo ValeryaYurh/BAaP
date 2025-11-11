@@ -25,6 +25,18 @@
 },
 {
   "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++17 -arch arm64 -o CMakeFiles/Task_3.dir/Task_3/Task_3.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_3/Task_3.cpp",
+  "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_3/Task_3.cpp",
+  "output": "CMakeFiles/Task_3.dir/Task_3/Task_3.cpp.o"
+},
+{
+  "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++17 -arch arm64 -o CMakeFiles/Task_3.dir/Task_3/res.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_3/res.cpp",
+  "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_3/res.cpp",
+  "output": "CMakeFiles/Task_3.dir/Task_3/res.cpp.o"
+},
+{
+  "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/build",
   "command": "/usr/bin/clang++  -isystem /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/build/_deps/googletest-src/googletest/include -isystem /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/build/_deps/googletest-src/googletest -g -std=gnu++17 -arch arm64 -o CMakeFiles/gtest1.dir/Task_1/gtest1.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_1/gtest1.cpp",
   "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_1/gtest1.cpp",
   "output": "CMakeFiles/gtest1.dir/Task_1/gtest1.cpp.o"
@@ -46,6 +58,18 @@
   "command": "/usr/bin/clang++  -isystem /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/build/_deps/googletest-src/googletest/include -isystem /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/build/_deps/googletest-src/googletest -g -std=gnu++17 -arch arm64 -o CMakeFiles/gtest2.dir/Task_2/receipt_calc.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_2/receipt_calc.cpp",
   "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_2/receipt_calc.cpp",
   "output": "CMakeFiles/gtest2.dir/Task_2/receipt_calc.cpp.o"
+},
+{
+  "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/build",
+  "command": "/usr/bin/clang++  -isystem /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/build/_deps/googletest-src/googletest/include -isystem /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/build/_deps/googletest-src/googletest -g -std=gnu++17 -arch arm64 -o CMakeFiles/gtest3.dir/Task_3/gtest3.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_3/gtest3.cpp",
+  "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_3/gtest3.cpp",
+  "output": "CMakeFiles/gtest3.dir/Task_3/gtest3.cpp.o"
+},
+{
+  "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/build",
+  "command": "/usr/bin/clang++  -isystem /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/build/_deps/googletest-src/googletest/include -isystem /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/build/_deps/googletest-src/googletest -g -std=gnu++17 -arch arm64 -o CMakeFiles/gtest3.dir/Task_3/res.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_3/res.cpp",
+  "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_3/res.cpp",
+  "output": "CMakeFiles/gtest3.dir/Task_3/res.cpp.o"
 },
 {
   "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/build/_deps/googletest-build/googlemock",

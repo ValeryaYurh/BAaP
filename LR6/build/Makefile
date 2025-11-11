@@ -198,6 +198,19 @@ Task_2/fast:
 .PHONY : Task_2/fast
 
 #=============================================================================
+# Target rules for targets named Task_3
+
+# Build rule for target.
+Task_3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Task_3
+.PHONY : Task_3
+
+# fast build rule for target.
+Task_3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_3.dir/build.make CMakeFiles/Task_3.dir/build
+.PHONY : Task_3/fast
+
+#=============================================================================
 # Target rules for targets named gtest1
 
 # Build rule for target.
@@ -222,6 +235,19 @@ gtest2: cmake_check_build_system
 gtest2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtest2.dir/build.make CMakeFiles/gtest2.dir/build
 .PHONY : gtest2/fast
+
+#=============================================================================
+# Target rules for targets named gtest3
+
+# Build rule for target.
+gtest3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest3
+.PHONY : gtest3
+
+# fast build rule for target.
+gtest3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtest3.dir/build.make CMakeFiles/gtest3.dir/build
+.PHONY : gtest3/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -425,6 +451,81 @@ Task_2/receipt_calc.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtest2.dir/build.make CMakeFiles/gtest2.dir/Task_2/receipt_calc.cpp.s
 .PHONY : Task_2/receipt_calc.cpp.s
 
+Task_3/Task_3.o: Task_3/Task_3.cpp.o
+.PHONY : Task_3/Task_3.o
+
+# target to build an object file
+Task_3/Task_3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_3.dir/build.make CMakeFiles/Task_3.dir/Task_3/Task_3.cpp.o
+.PHONY : Task_3/Task_3.cpp.o
+
+Task_3/Task_3.i: Task_3/Task_3.cpp.i
+.PHONY : Task_3/Task_3.i
+
+# target to preprocess a source file
+Task_3/Task_3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_3.dir/build.make CMakeFiles/Task_3.dir/Task_3/Task_3.cpp.i
+.PHONY : Task_3/Task_3.cpp.i
+
+Task_3/Task_3.s: Task_3/Task_3.cpp.s
+.PHONY : Task_3/Task_3.s
+
+# target to generate assembly for a file
+Task_3/Task_3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_3.dir/build.make CMakeFiles/Task_3.dir/Task_3/Task_3.cpp.s
+.PHONY : Task_3/Task_3.cpp.s
+
+Task_3/gtest3.o: Task_3/gtest3.cpp.o
+.PHONY : Task_3/gtest3.o
+
+# target to build an object file
+Task_3/gtest3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtest3.dir/build.make CMakeFiles/gtest3.dir/Task_3/gtest3.cpp.o
+.PHONY : Task_3/gtest3.cpp.o
+
+Task_3/gtest3.i: Task_3/gtest3.cpp.i
+.PHONY : Task_3/gtest3.i
+
+# target to preprocess a source file
+Task_3/gtest3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtest3.dir/build.make CMakeFiles/gtest3.dir/Task_3/gtest3.cpp.i
+.PHONY : Task_3/gtest3.cpp.i
+
+Task_3/gtest3.s: Task_3/gtest3.cpp.s
+.PHONY : Task_3/gtest3.s
+
+# target to generate assembly for a file
+Task_3/gtest3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtest3.dir/build.make CMakeFiles/gtest3.dir/Task_3/gtest3.cpp.s
+.PHONY : Task_3/gtest3.cpp.s
+
+Task_3/res.o: Task_3/res.cpp.o
+.PHONY : Task_3/res.o
+
+# target to build an object file
+Task_3/res.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_3.dir/build.make CMakeFiles/Task_3.dir/Task_3/res.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtest3.dir/build.make CMakeFiles/gtest3.dir/Task_3/res.cpp.o
+.PHONY : Task_3/res.cpp.o
+
+Task_3/res.i: Task_3/res.cpp.i
+.PHONY : Task_3/res.i
+
+# target to preprocess a source file
+Task_3/res.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_3.dir/build.make CMakeFiles/Task_3.dir/Task_3/res.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtest3.dir/build.make CMakeFiles/gtest3.dir/Task_3/res.cpp.i
+.PHONY : Task_3/res.cpp.i
+
+Task_3/res.s: Task_3/res.cpp.s
+.PHONY : Task_3/res.s
+
+# target to generate assembly for a file
+Task_3/res.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_3.dir/build.make CMakeFiles/Task_3.dir/Task_3/res.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtest3.dir/build.make CMakeFiles/gtest3.dir/Task_3/res.cpp.s
+.PHONY : Task_3/res.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -440,11 +541,13 @@ help:
 	@echo "... test"
 	@echo "... Task_1"
 	@echo "... Task_2"
+	@echo "... Task_3"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest1"
 	@echo "... gtest2"
+	@echo "... gtest3"
 	@echo "... gtest_main"
 	@echo "... Task_1/Task_1.o"
 	@echo "... Task_1/Task_1.i"
@@ -464,6 +567,15 @@ help:
 	@echo "... Task_2/receipt_calc.o"
 	@echo "... Task_2/receipt_calc.i"
 	@echo "... Task_2/receipt_calc.s"
+	@echo "... Task_3/Task_3.o"
+	@echo "... Task_3/Task_3.i"
+	@echo "... Task_3/Task_3.s"
+	@echo "... Task_3/gtest3.o"
+	@echo "... Task_3/gtest3.i"
+	@echo "... Task_3/gtest3.s"
+	@echo "... Task_3/res.o"
+	@echo "... Task_3/res.i"
+	@echo "... Task_3/res.s"
 .PHONY : help
 
 
