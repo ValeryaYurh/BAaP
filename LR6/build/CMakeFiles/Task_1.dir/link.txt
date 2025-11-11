@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/Task_1.dir/Task_1/Task_1.cpp.o CMakeFiles/Task_1.dir/Task_1/find.cpp.o -o Task_1
