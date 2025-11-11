@@ -185,6 +185,19 @@ Task_1/fast:
 .PHONY : Task_1/fast
 
 #=============================================================================
+# Target rules for targets named Task_2
+
+# Build rule for target.
+Task_2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Task_2
+.PHONY : Task_2
+
+# fast build rule for target.
+Task_2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_2.dir/build.make CMakeFiles/Task_2.dir/build
+.PHONY : Task_2/fast
+
+#=============================================================================
 # Target rules for targets named gtest1
 
 # Build rule for target.
@@ -196,6 +209,19 @@ gtest1: cmake_check_build_system
 gtest1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtest1.dir/build.make CMakeFiles/gtest1.dir/build
 .PHONY : gtest1/fast
+
+#=============================================================================
+# Target rules for targets named gtest2
+
+# Build rule for target.
+gtest2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest2
+.PHONY : gtest2
+
+# fast build rule for target.
+gtest2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtest2.dir/build.make CMakeFiles/gtest2.dir/build
+.PHONY : gtest2/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -324,6 +350,81 @@ Task_1/gtest1.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtest1.dir/build.make CMakeFiles/gtest1.dir/Task_1/gtest1.cpp.s
 .PHONY : Task_1/gtest1.cpp.s
 
+Task_2/Task_2.o: Task_2/Task_2.cpp.o
+.PHONY : Task_2/Task_2.o
+
+# target to build an object file
+Task_2/Task_2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_2.dir/build.make CMakeFiles/Task_2.dir/Task_2/Task_2.cpp.o
+.PHONY : Task_2/Task_2.cpp.o
+
+Task_2/Task_2.i: Task_2/Task_2.cpp.i
+.PHONY : Task_2/Task_2.i
+
+# target to preprocess a source file
+Task_2/Task_2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_2.dir/build.make CMakeFiles/Task_2.dir/Task_2/Task_2.cpp.i
+.PHONY : Task_2/Task_2.cpp.i
+
+Task_2/Task_2.s: Task_2/Task_2.cpp.s
+.PHONY : Task_2/Task_2.s
+
+# target to generate assembly for a file
+Task_2/Task_2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_2.dir/build.make CMakeFiles/Task_2.dir/Task_2/Task_2.cpp.s
+.PHONY : Task_2/Task_2.cpp.s
+
+Task_2/gtest2.o: Task_2/gtest2.cpp.o
+.PHONY : Task_2/gtest2.o
+
+# target to build an object file
+Task_2/gtest2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtest2.dir/build.make CMakeFiles/gtest2.dir/Task_2/gtest2.cpp.o
+.PHONY : Task_2/gtest2.cpp.o
+
+Task_2/gtest2.i: Task_2/gtest2.cpp.i
+.PHONY : Task_2/gtest2.i
+
+# target to preprocess a source file
+Task_2/gtest2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtest2.dir/build.make CMakeFiles/gtest2.dir/Task_2/gtest2.cpp.i
+.PHONY : Task_2/gtest2.cpp.i
+
+Task_2/gtest2.s: Task_2/gtest2.cpp.s
+.PHONY : Task_2/gtest2.s
+
+# target to generate assembly for a file
+Task_2/gtest2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtest2.dir/build.make CMakeFiles/gtest2.dir/Task_2/gtest2.cpp.s
+.PHONY : Task_2/gtest2.cpp.s
+
+Task_2/receipt_calc.o: Task_2/receipt_calc.cpp.o
+.PHONY : Task_2/receipt_calc.o
+
+# target to build an object file
+Task_2/receipt_calc.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_2.dir/build.make CMakeFiles/Task_2.dir/Task_2/receipt_calc.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtest2.dir/build.make CMakeFiles/gtest2.dir/Task_2/receipt_calc.cpp.o
+.PHONY : Task_2/receipt_calc.cpp.o
+
+Task_2/receipt_calc.i: Task_2/receipt_calc.cpp.i
+.PHONY : Task_2/receipt_calc.i
+
+# target to preprocess a source file
+Task_2/receipt_calc.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_2.dir/build.make CMakeFiles/Task_2.dir/Task_2/receipt_calc.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtest2.dir/build.make CMakeFiles/gtest2.dir/Task_2/receipt_calc.cpp.i
+.PHONY : Task_2/receipt_calc.cpp.i
+
+Task_2/receipt_calc.s: Task_2/receipt_calc.cpp.s
+.PHONY : Task_2/receipt_calc.s
+
+# target to generate assembly for a file
+Task_2/receipt_calc.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_2.dir/build.make CMakeFiles/Task_2.dir/Task_2/receipt_calc.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtest2.dir/build.make CMakeFiles/gtest2.dir/Task_2/receipt_calc.cpp.s
+.PHONY : Task_2/receipt_calc.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -338,10 +439,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... Task_1"
+	@echo "... Task_2"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest1"
+	@echo "... gtest2"
 	@echo "... gtest_main"
 	@echo "... Task_1/Task_1.o"
 	@echo "... Task_1/Task_1.i"
@@ -352,6 +455,15 @@ help:
 	@echo "... Task_1/gtest1.o"
 	@echo "... Task_1/gtest1.i"
 	@echo "... Task_1/gtest1.s"
+	@echo "... Task_2/Task_2.o"
+	@echo "... Task_2/Task_2.i"
+	@echo "... Task_2/Task_2.s"
+	@echo "... Task_2/gtest2.o"
+	@echo "... Task_2/gtest2.i"
+	@echo "... Task_2/gtest2.s"
+	@echo "... Task_2/receipt_calc.o"
+	@echo "... Task_2/receipt_calc.i"
+	@echo "... Task_2/receipt_calc.s"
 .PHONY : help
 
 

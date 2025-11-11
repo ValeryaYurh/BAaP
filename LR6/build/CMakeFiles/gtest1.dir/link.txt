@@ -1,1 +1,1 @@
-/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/gtest1.dir/Task_1/gtest1.cpp.o CMakeFiles/gtest1.dir/Task_1/find.cpp.o -o gtest1  lib/libgtest_main.a lib/libgtest.a
+/usr/bin/clang++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/gtest1.dir/Task_1/gtest1.cpp.o CMakeFiles/gtest1.dir/Task_1/find.cpp.o -o gtest1  lib/libgtest_main.a lib/libgtest.a

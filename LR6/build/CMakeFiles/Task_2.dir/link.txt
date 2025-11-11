@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/Task_2.dir/Task_2/Task_2.cpp.o CMakeFiles/Task_2.dir/Task_2/receipt_calc.cpp.o -o Task_2

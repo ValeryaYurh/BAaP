@@ -1,5 +1,7 @@
 /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/build/CMakeFiles/Task_1.dir
+/Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/build/CMakeFiles/Task_2.dir
 /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/build/CMakeFiles/gtest1.dir
+/Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/build/CMakeFiles/gtest2.dir
 /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/build/CMakeFiles/test.dir
 /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/build/CMakeFiles/edit_cache.dir
 /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/build/CMakeFiles/rebuild_cache.dir

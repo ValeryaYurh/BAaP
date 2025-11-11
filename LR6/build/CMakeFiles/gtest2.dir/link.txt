@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/gtest2.dir/Task_2/gtest2.cpp.o CMakeFiles/gtest2.dir/Task_2/receipt_calc.cpp.o -o gtest2  lib/libgtest_main.a lib/libgtest.a

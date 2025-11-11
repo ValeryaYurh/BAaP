@@ -30,7 +30,7 @@ set(CMAKE_OSX_ARCHITECTURES arm64)
 # Исполняемые файлы задач
 # ========================================
 add_executable(Task_1 Task_1/Task_1.cpp Task_1/find.cpp)
-# add_executable(Task_2 Task_2/Task_2.cpp Task_2/Task_2_func.cpp)
+add_executable(Task_2 Task_2/Task_2.cpp Task_2/receipt_calc.cpp)
 # add_executable(Task_3 Task_3/Task_3.cpp Task_3/Task_3_func.cpp)
 
 # Можно добавить больше задач по аналогии
@@ -49,12 +49,22 @@ FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 
-# Single test executable for Task_1 and Task_2
 add_executable(
   gtest1
   Task_1/gtest1.cpp   # tests for Task_1
   Task_1/find.cpp
 )
+
 target_link_libraries(gtest1 GTest::gtest_main)
 include(GoogleTest)
 gtest_discover_tests(gtest1)
+
+add_executable(
+  gtest2
+  Task_2/gtest2.cpp   # tests for Task_1
+  Task_2/receipt_calc.cpp
+)
+
+target_link_libraries(gtest2 GTest::gtest_main)
+include(GoogleTest)
+gtest_discover_tests(gtest2)

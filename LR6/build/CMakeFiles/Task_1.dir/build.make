@@ -76,29 +76,29 @@ CMakeFiles/Task_1.dir/Task_1/Task_1.cpp.o: CMakeFiles/Task_1.dir/flags.make
 CMakeFiles/Task_1.dir/Task_1/Task_1.cpp.o: /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_1/Task_1.cpp
 CMakeFiles/Task_1.dir/Task_1/Task_1.cpp.o: CMakeFiles/Task_1.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Task_1.dir/Task_1/Task_1.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Task_1.dir/Task_1/Task_1.cpp.o -MF CMakeFiles/Task_1.dir/Task_1/Task_1.cpp.o.d -o CMakeFiles/Task_1.dir/Task_1/Task_1.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_1/Task_1.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Task_1.dir/Task_1/Task_1.cpp.o -MF CMakeFiles/Task_1.dir/Task_1/Task_1.cpp.o.d -o CMakeFiles/Task_1.dir/Task_1/Task_1.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_1/Task_1.cpp
 
 CMakeFiles/Task_1.dir/Task_1/Task_1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Task_1.dir/Task_1/Task_1.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_1/Task_1.cpp > CMakeFiles/Task_1.dir/Task_1/Task_1.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_1/Task_1.cpp > CMakeFiles/Task_1.dir/Task_1/Task_1.cpp.i
 
 CMakeFiles/Task_1.dir/Task_1/Task_1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Task_1.dir/Task_1/Task_1.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_1/Task_1.cpp -o CMakeFiles/Task_1.dir/Task_1/Task_1.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_1/Task_1.cpp -o CMakeFiles/Task_1.dir/Task_1/Task_1.cpp.s
 
 CMakeFiles/Task_1.dir/Task_1/find.cpp.o: CMakeFiles/Task_1.dir/flags.make
 CMakeFiles/Task_1.dir/Task_1/find.cpp.o: /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_1/find.cpp
 CMakeFiles/Task_1.dir/Task_1/find.cpp.o: CMakeFiles/Task_1.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Task_1.dir/Task_1/find.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Task_1.dir/Task_1/find.cpp.o -MF CMakeFiles/Task_1.dir/Task_1/find.cpp.o.d -o CMakeFiles/Task_1.dir/Task_1/find.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_1/find.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Task_1.dir/Task_1/find.cpp.o -MF CMakeFiles/Task_1.dir/Task_1/find.cpp.o.d -o CMakeFiles/Task_1.dir/Task_1/find.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_1/find.cpp
 
 CMakeFiles/Task_1.dir/Task_1/find.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Task_1.dir/Task_1/find.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_1/find.cpp > CMakeFiles/Task_1.dir/Task_1/find.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_1/find.cpp > CMakeFiles/Task_1.dir/Task_1/find.cpp.i
 
 CMakeFiles/Task_1.dir/Task_1/find.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Task_1.dir/Task_1/find.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_1/find.cpp -o CMakeFiles/Task_1.dir/Task_1/find.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_1/find.cpp -o CMakeFiles/Task_1.dir/Task_1/find.cpp.s
 
 # Object files for target Task_1
 Task_1_OBJECTS = \
