@@ -76,7 +76,7 @@ CMakeFiles/gtest3.dir/Task_3/gtest3.cpp.o: CMakeFiles/gtest3.dir/flags.make
 CMakeFiles/gtest3.dir/Task_3/gtest3.cpp.o: /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_3/gtest3.cpp
 CMakeFiles/gtest3.dir/Task_3/gtest3.cpp.o: CMakeFiles/gtest3.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gtest3.dir/Task_3/gtest3.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gtest3.dir/Task_3/gtest3.cpp.o -MF CMakeFiles/gtest3.dir/Task_3/gtest3.cpp.o.d -o CMakeFiles/gtest3.dir/Task_3/gtest3.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_3/gtest3.cpp
+	$(CMAKE_COMMAND) -E __run_co_compile --tidy="/opt/homebrew/opt/llvm/bin/clang-tidy;-checks=*;--extra-arg-before=--driver-mode=g++" --source=/Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_3/gtest3.cpp -- /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gtest3.dir/Task_3/gtest3.cpp.o -MF CMakeFiles/gtest3.dir/Task_3/gtest3.cpp.o.d -o CMakeFiles/gtest3.dir/Task_3/gtest3.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_3/gtest3.cpp
 
 CMakeFiles/gtest3.dir/Task_3/gtest3.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gtest3.dir/Task_3/gtest3.cpp.i"
@@ -90,7 +90,7 @@ CMakeFiles/gtest3.dir/Task_3/res.cpp.o: CMakeFiles/gtest3.dir/flags.make
 CMakeFiles/gtest3.dir/Task_3/res.cpp.o: /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_3/res.cpp
 CMakeFiles/gtest3.dir/Task_3/res.cpp.o: CMakeFiles/gtest3.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/gtest3.dir/Task_3/res.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gtest3.dir/Task_3/res.cpp.o -MF CMakeFiles/gtest3.dir/Task_3/res.cpp.o.d -o CMakeFiles/gtest3.dir/Task_3/res.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_3/res.cpp
+	$(CMAKE_COMMAND) -E __run_co_compile --tidy="/opt/homebrew/opt/llvm/bin/clang-tidy;-checks=*;--extra-arg-before=--driver-mode=g++" --source=/Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_3/res.cpp -- /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gtest3.dir/Task_3/res.cpp.o -MF CMakeFiles/gtest3.dir/Task_3/res.cpp.o.d -o CMakeFiles/gtest3.dir/Task_3/res.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_3/res.cpp
 
 CMakeFiles/gtest3.dir/Task_3/res.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gtest3.dir/Task_3/res.cpp.i"

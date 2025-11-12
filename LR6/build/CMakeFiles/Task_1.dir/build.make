@@ -76,7 +76,7 @@ CMakeFiles/Task_1.dir/Task_1/Task_1.cpp.o: CMakeFiles/Task_1.dir/flags.make
 CMakeFiles/Task_1.dir/Task_1/Task_1.cpp.o: /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_1/Task_1.cpp
 CMakeFiles/Task_1.dir/Task_1/Task_1.cpp.o: CMakeFiles/Task_1.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Task_1.dir/Task_1/Task_1.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Task_1.dir/Task_1/Task_1.cpp.o -MF CMakeFiles/Task_1.dir/Task_1/Task_1.cpp.o.d -o CMakeFiles/Task_1.dir/Task_1/Task_1.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_1/Task_1.cpp
+	$(CMAKE_COMMAND) -E __run_co_compile --tidy="/opt/homebrew/opt/llvm/bin/clang-tidy;-checks=*;--extra-arg-before=--driver-mode=g++" --source=/Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_1/Task_1.cpp -- /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Task_1.dir/Task_1/Task_1.cpp.o -MF CMakeFiles/Task_1.dir/Task_1/Task_1.cpp.o.d -o CMakeFiles/Task_1.dir/Task_1/Task_1.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_1/Task_1.cpp
 
 CMakeFiles/Task_1.dir/Task_1/Task_1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Task_1.dir/Task_1/Task_1.cpp.i"
@@ -90,7 +90,7 @@ CMakeFiles/Task_1.dir/Task_1/find.cpp.o: CMakeFiles/Task_1.dir/flags.make
 CMakeFiles/Task_1.dir/Task_1/find.cpp.o: /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_1/find.cpp
 CMakeFiles/Task_1.dir/Task_1/find.cpp.o: CMakeFiles/Task_1.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Task_1.dir/Task_1/find.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Task_1.dir/Task_1/find.cpp.o -MF CMakeFiles/Task_1.dir/Task_1/find.cpp.o.d -o CMakeFiles/Task_1.dir/Task_1/find.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_1/find.cpp
+	$(CMAKE_COMMAND) -E __run_co_compile --tidy="/opt/homebrew/opt/llvm/bin/clang-tidy;-checks=*;--extra-arg-before=--driver-mode=g++" --source=/Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_1/find.cpp -- /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Task_1.dir/Task_1/find.cpp.o -MF CMakeFiles/Task_1.dir/Task_1/find.cpp.o.d -o CMakeFiles/Task_1.dir/Task_1/find.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_1/find.cpp
 
 CMakeFiles/Task_1.dir/Task_1/find.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Task_1.dir/Task_1/find.cpp.i"

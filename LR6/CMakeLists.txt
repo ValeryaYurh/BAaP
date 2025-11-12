@@ -7,24 +7,8 @@ project(LR6)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_OSX_ARCHITECTURES arm64)
-
-# # Санитайзеры (Address, Undefined, Thread)
-# set(SANITIZER_FLAGS "-fsanitize=address,undefined,thread")
-# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${SANITIZER_FLAGS} -Wall -Wextra -pedantic")
-
- # ========================================
- # Подключение GoogleTest
- # ========================================
- # include(FetchContent)
-
-# FetchContent_Declare(
-#   googletest
-#   URL https://github.com/google/googletest/archive/03597a01ee50ed33e9dfd640b249b4be3799d395.zip
-# )
-
-# set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
-# FetchContent_MakeAvailable(googletest)
-# enable_testing()
+set(CMAKE_CXX_CLANG_TIDY "/opt/homebrew/opt/llvm/bin/clang-tidy;-checks=*")
+set(SANITIZER "address;thread")
 
 # ========================================
 # Исполняемые файлы задач
@@ -61,7 +45,7 @@ gtest_discover_tests(gtest1)
 
 add_executable(
   gtest2
-  Task_2/gtest2.cpp   # tests for Task_1
+  Task_2/gtest2.cpp   # tests for Task_2
   Task_2/receipt_calc.cpp
 )
 
@@ -71,7 +55,7 @@ gtest_discover_tests(gtest2)
 
 add_executable(
   gtest3
-  Task_3/gtest3.cpp   # tests for Task_1
+  Task_3/gtest3.cpp   # tests for Task_3
   Task_3/res.cpp
 )
 

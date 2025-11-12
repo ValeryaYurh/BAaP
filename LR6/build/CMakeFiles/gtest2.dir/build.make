@@ -76,7 +76,7 @@ CMakeFiles/gtest2.dir/Task_2/gtest2.cpp.o: CMakeFiles/gtest2.dir/flags.make
 CMakeFiles/gtest2.dir/Task_2/gtest2.cpp.o: /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_2/gtest2.cpp
 CMakeFiles/gtest2.dir/Task_2/gtest2.cpp.o: CMakeFiles/gtest2.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gtest2.dir/Task_2/gtest2.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gtest2.dir/Task_2/gtest2.cpp.o -MF CMakeFiles/gtest2.dir/Task_2/gtest2.cpp.o.d -o CMakeFiles/gtest2.dir/Task_2/gtest2.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_2/gtest2.cpp
+	$(CMAKE_COMMAND) -E __run_co_compile --tidy="/opt/homebrew/opt/llvm/bin/clang-tidy;-checks=*;--extra-arg-before=--driver-mode=g++" --source=/Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_2/gtest2.cpp -- /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gtest2.dir/Task_2/gtest2.cpp.o -MF CMakeFiles/gtest2.dir/Task_2/gtest2.cpp.o.d -o CMakeFiles/gtest2.dir/Task_2/gtest2.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_2/gtest2.cpp
 
 CMakeFiles/gtest2.dir/Task_2/gtest2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gtest2.dir/Task_2/gtest2.cpp.i"
@@ -90,7 +90,7 @@ CMakeFiles/gtest2.dir/Task_2/receipt_calc.cpp.o: CMakeFiles/gtest2.dir/flags.mak
 CMakeFiles/gtest2.dir/Task_2/receipt_calc.cpp.o: /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_2/receipt_calc.cpp
 CMakeFiles/gtest2.dir/Task_2/receipt_calc.cpp.o: CMakeFiles/gtest2.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/gtest2.dir/Task_2/receipt_calc.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gtest2.dir/Task_2/receipt_calc.cpp.o -MF CMakeFiles/gtest2.dir/Task_2/receipt_calc.cpp.o.d -o CMakeFiles/gtest2.dir/Task_2/receipt_calc.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_2/receipt_calc.cpp
+	$(CMAKE_COMMAND) -E __run_co_compile --tidy="/opt/homebrew/opt/llvm/bin/clang-tidy;-checks=*;--extra-arg-before=--driver-mode=g++" --source=/Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_2/receipt_calc.cpp -- /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gtest2.dir/Task_2/receipt_calc.cpp.o -MF CMakeFiles/gtest2.dir/Task_2/receipt_calc.cpp.o.d -o CMakeFiles/gtest2.dir/Task_2/receipt_calc.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR6/Task_2/receipt_calc.cpp
 
 CMakeFiles/gtest2.dir/Task_2/receipt_calc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gtest2.dir/Task_2/receipt_calc.cpp.i"
