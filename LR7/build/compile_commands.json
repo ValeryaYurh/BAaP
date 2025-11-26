@@ -10,5 +10,17 @@
   "command": "/usr/bin/clang++   -g -std=gnu++17 -arch arm64 -o CMakeFiles/Task_1.dir/task1.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR7/task1.cpp",
   "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR7/task1.cpp",
   "output": "CMakeFiles/Task_1.dir/task1.cpp.o"
+},
+{
+  "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR7/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++17 -arch arm64 -o CMakeFiles/Task_2.dir/include/tools.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR7/include/tools.cpp",
+  "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR7/include/tools.cpp",
+  "output": "CMakeFiles/Task_2.dir/include/tools.cpp.o"
+},
+{
+  "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR7/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++17 -arch arm64 -o CMakeFiles/Task_2.dir/task2.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR7/task2.cpp",
+  "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR7/task2.cpp",
+  "output": "CMakeFiles/Task_2.dir/task2.cpp.o"
 }
 ]

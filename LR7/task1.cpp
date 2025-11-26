@@ -25,7 +25,7 @@ void sum()
   }
   cout << endl;
 
-  int *c = complement(bin, size, num);
+  int *c = complement(bin, size);
   cout << GREEN << "Обратный код: ";
   for (int i = 0; i < size; i++)
   {

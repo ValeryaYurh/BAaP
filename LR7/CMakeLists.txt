@@ -14,5 +14,5 @@ set(SANITIZER "address;thread")
 # Исполняемые файлы задач
 # ========================================
 add_executable(Task_1 include/tools.cpp task1.cpp)
-# add_executable(Task_2 Task_2/Task_2.cpp Task_2/receipt_calc.cpp)
+add_executable(Task_2 include/tools.cpp task2.cpp)
 # add_executable(Task_3 Task_3/Task_3.cpp Task_3/res.cpp)

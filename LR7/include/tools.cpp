@@ -21,7 +21,6 @@ int *binary(int a, int &size)
         return bi_code;
     }
 
-
     while (a > 0)
     {
         int k = a % 2;
@@ -58,11 +57,11 @@ int *binary(int a, int &size)
     return bi_code;
 }
 
-int *complement(int *arr, int size, int a)
+int *complement(int *arr, int size)
 {
-    int* c = new int[size];
+    int *c = new int[size];
 
-    if (a >= 0)
+    if (arr[0] == 0)
     {
         for (int i = 0; i < size; i++)
         {
@@ -78,4 +77,52 @@ int *complement(int *arr, int size, int a)
     }
 
     return c;
+}
+
+int *twos_complement(int *arr, int size)
+{
+    int *res = new int[size];
+
+    for (int i = 0; i < size; i++)
+        res[i] = arr[i];
+
+    if (arr[0] == 0)
+    {
+        for (int i = 0; i < size; i++)
+        {
+            res[i] = arr[i];
+        }
+    }
+    else
+    {
+        for (int i = size - 1; i >= 1; i--)
+        {
+            if (res[i] == 0)
+            {
+                res[i] = 1;
+                break;
+            }
+            else
+            {
+                res[i] = 0;
+            }
+        }
+    }
+
+    return res;
+}
+
+int* summy(int* arr1, int* arr2, int size)
+{
+    int* result = new int[size];
+    int carry = 0;
+
+    for (int i = size - 1; i >= 0; i--)
+    {
+        int sum = arr1[i] + arr2[i] + carry;
+        result[i] = sum % 2;     
+        carry = sum / 2;        
+    }
+
+    return result;
 }
