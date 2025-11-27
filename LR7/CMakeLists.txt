@@ -15,4 +15,4 @@ set(SANITIZER "address;thread")
 # ========================================
 add_executable(Task_1 include/tools.cpp task1.cpp)
 add_executable(Task_2 include/tools.cpp task2.cpp)
-# add_executable(Task_3 Task_3/Task_3.cpp Task_3/res.cpp)
+add_executable(Task_3 include/tools.cpp task3.cpp)

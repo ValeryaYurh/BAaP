@@ -142,6 +142,19 @@ Task_2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_2.dir/build.make CMakeFiles/Task_2.dir/build
 .PHONY : Task_2/fast
 
+#=============================================================================
+# Target rules for targets named Task_3
+
+# Build rule for target.
+Task_3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Task_3
+.PHONY : Task_3
+
+# fast build rule for target.
+Task_3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_3.dir/build.make CMakeFiles/Task_3.dir/build
+.PHONY : Task_3/fast
+
 include/tools.o: include/tools.cpp.o
 .PHONY : include/tools.o
 
@@ -149,6 +162,7 @@ include/tools.o: include/tools.cpp.o
 include/tools.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_1.dir/build.make CMakeFiles/Task_1.dir/include/tools.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_2.dir/build.make CMakeFiles/Task_2.dir/include/tools.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_3.dir/build.make CMakeFiles/Task_3.dir/include/tools.cpp.o
 .PHONY : include/tools.cpp.o
 
 include/tools.i: include/tools.cpp.i
@@ -158,6 +172,7 @@ include/tools.i: include/tools.cpp.i
 include/tools.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_1.dir/build.make CMakeFiles/Task_1.dir/include/tools.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_2.dir/build.make CMakeFiles/Task_2.dir/include/tools.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_3.dir/build.make CMakeFiles/Task_3.dir/include/tools.cpp.i
 .PHONY : include/tools.cpp.i
 
 include/tools.s: include/tools.cpp.s
@@ -167,6 +182,7 @@ include/tools.s: include/tools.cpp.s
 include/tools.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_1.dir/build.make CMakeFiles/Task_1.dir/include/tools.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_2.dir/build.make CMakeFiles/Task_2.dir/include/tools.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_3.dir/build.make CMakeFiles/Task_3.dir/include/tools.cpp.s
 .PHONY : include/tools.cpp.s
 
 task1.o: task1.cpp.o
@@ -217,6 +233,30 @@ task2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_2.dir/build.make CMakeFiles/Task_2.dir/task2.cpp.s
 .PHONY : task2.cpp.s
 
+task3.o: task3.cpp.o
+.PHONY : task3.o
+
+# target to build an object file
+task3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_3.dir/build.make CMakeFiles/Task_3.dir/task3.cpp.o
+.PHONY : task3.cpp.o
+
+task3.i: task3.cpp.i
+.PHONY : task3.i
+
+# target to preprocess a source file
+task3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_3.dir/build.make CMakeFiles/Task_3.dir/task3.cpp.i
+.PHONY : task3.cpp.i
+
+task3.s: task3.cpp.s
+.PHONY : task3.s
+
+# target to generate assembly for a file
+task3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_3.dir/build.make CMakeFiles/Task_3.dir/task3.cpp.s
+.PHONY : task3.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -227,6 +267,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Task_1"
 	@echo "... Task_2"
+	@echo "... Task_3"
 	@echo "... include/tools.o"
 	@echo "... include/tools.i"
 	@echo "... include/tools.s"
@@ -236,6 +277,9 @@ help:
 	@echo "... task2.o"
 	@echo "... task2.i"
 	@echo "... task2.s"
+	@echo "... task3.o"
+	@echo "... task3.i"
+	@echo "... task3.s"
 .PHONY : help
 
 

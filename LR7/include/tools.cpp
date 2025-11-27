@@ -1,6 +1,9 @@
 #include "tools.h"
 #include <cmath>
 #include <iostream>
+#include <string> 
+
+using namespace std;
 
 #define RESET "\033[0m"
 #define GREEN "\033[32m"
@@ -112,17 +115,105 @@ int *twos_complement(int *arr, int size)
     return res;
 }
 
-int* summy(int* arr1, int* arr2, int size)
+int *summy(int *arr1, int *arr2, int size)
 {
-    int* result = new int[size];
+    int *result = new int[size];
     int carry = 0;
 
     for (int i = size - 1; i >= 0; i--)
     {
         int sum = arr1[i] + arr2[i] + carry;
-        result[i] = sum % 2;     
-        carry = sum / 2;        
+        result[i] = sum % 2;
+        carry = sum / 2;
     }
 
     return result;
+}
+
+char *bin_char(int *arr, int size)
+{
+    char *bin_char = new char[size + 1];
+
+    for (int i = 0; i < size; i++)
+    {
+        bin_char[i] = arr[i] + '0';
+    }
+
+    bin_char[size] = '\0';
+
+    return bin_char;
+}
+
+char* dec_to_oct_char(int num, int &size)
+{
+    bool isNegative = num < 0;
+    num = abs(num);
+
+    int n = num;
+    size = 0;
+    while (n > 0)
+    {
+        n /= 8;
+        size++;
+    }
+
+    char* oct = new char[size + 1]; 
+    oct[size] = '\0';
+
+    for (int i = size - 1; i >= 0; i--)
+    {
+        oct[i] = '0' + (num % 8);
+        num /= 8;
+    }
+
+    return oct;
+}
+
+char *sum_oct(int num1, int num2, int size)
+{
+    int sum = num1+num2;
+
+    char *summy_oct = dec_to_oct_char(sum, size);
+
+    return summy_oct;
+}
+
+char *dif_oct(int num1, int num2, int size)
+{
+    int dif = num1-num2;
+
+    char *difference_oct = dec_to_oct_char(dif, size);
+
+    return difference_oct;
+}
+
+
+char* dec_to_hex_char(int num, int &size)
+{
+    bool isNegative = num < 0;
+    num = abs(num);
+
+    int n = num;
+    size = 0;
+    while (n > 0)
+    {
+        n /= 16;
+        size++;
+    }
+
+    char* hex = new char[size + 1];
+    hex[size] = '\0';
+
+    for (int i = size - 1; i >= 0; i--)
+    {
+        int remainder = num % 16;
+        if (remainder < 10)
+            hex[i] = '0' + remainder;
+        else
+            hex[i] = 'A' + (remainder - 10); 
+
+        num /= 16;
+    }
+    
+    return hex;
 }
