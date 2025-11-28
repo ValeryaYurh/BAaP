@@ -7,6 +7,7 @@ using namespace std;
 
 #define RESET "\033[0m"
 #define GREEN "\033[32m"
+#define BYELLOW "\033[93m"
 
 int *binary(int a, int &size)
 {
@@ -216,4 +217,55 @@ char* dec_to_hex_char(int num, int &size)
     }
     
     return hex;
+}
+
+int* encodeBase3(int barrel, int size)
+{
+    int* digits = new int[size];
+    for (int i = 0; i < size; i++)
+    {
+        digits[i] = barrel % 3;
+        barrel /= 3;
+    }
+    return digits;
+}
+
+int decodeBarrel(bool* died1, bool* died2, int size)
+{
+    int barrel = 0;
+    int power = 1;
+
+    for (int i = 0; i < size; i++)
+    {
+        int digit = 0;
+        if (died1[i]) digit = 1;
+        else if (died2[i]) digit = 2;
+
+        barrel += digit * power;
+        power *= 3;
+    }
+    return barrel;
+}
+
+// получение вводимых результатов
+void getExperimentalResults(bool* died1, bool* died2, int size)
+{
+    cout << BYELLOW << "Введите результаты:" << RESET << endl;
+
+    for (int i = 0; i < size; i++)
+    {
+        char response;
+        cout << "Раб " << i + 1 << " умер в День 1? (y/n): ";
+        cin >> response;
+
+        died1[i] = (response == 'y' || response == 'Y');
+
+        if (!died1[i])
+        {
+            cout << "Раб " << i + 1 << " умер в День 2? (y/n): ";
+            cin >> response;
+            died2[i] = (response == 'y' || response == 'Y');
+        }
+        else died2[i] = false;
+    }
 }
