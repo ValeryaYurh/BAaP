@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/Task_4.dir/include/tools.cpp.o CMakeFiles/Task_4.dir/task4.cpp.o -o Task_4

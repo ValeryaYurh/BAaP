@@ -10,6 +10,7 @@ using namespace std;
 #define RESET "\033[0m"
 #define BYELLOW "\033[93m"
 
+//O(n)
 void sum()
 {
     int size;

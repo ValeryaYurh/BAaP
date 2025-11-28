@@ -21,3 +21,5 @@ char* dec_to_hex_char(int num, int &size);
 void getExperimentalResults(bool* died1, bool* died2, int size);
 
 int decodeBarrel(bool* died1, bool* died2, int size);
+
+bool isDivisibleBy(int n, int d);

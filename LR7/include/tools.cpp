@@ -9,6 +9,7 @@ using namespace std;
 #define GREEN "\033[32m"
 #define BYELLOW "\033[93m"
 
+//O((logn)^2)
 int *binary(int a, int &size)
 {
     bool isNegative = a < 0;
@@ -61,6 +62,7 @@ int *binary(int a, int &size)
     return bi_code;
 }
 
+//O(n)
 int *complement(int *arr, int size)
 {
     int *c = new int[size];
@@ -83,6 +85,7 @@ int *complement(int *arr, int size)
     return c;
 }
 
+//O(n)
 int *twos_complement(int *arr, int size)
 {
     int *res = new int[size];
@@ -116,6 +119,7 @@ int *twos_complement(int *arr, int size)
     return res;
 }
 
+//O(n)
 int *summy(int *arr1, int *arr2, int size)
 {
     int *result = new int[size];
@@ -131,6 +135,7 @@ int *summy(int *arr1, int *arr2, int size)
     return result;
 }
 
+//O(n)
 char *bin_char(int *arr, int size)
 {
     char *bin_char = new char[size + 1];
@@ -145,6 +150,7 @@ char *bin_char(int *arr, int size)
     return bin_char;
 }
 
+//O(logn)
 char* dec_to_oct_char(int num, int &size)
 {
     bool isNegative = num < 0;
@@ -170,6 +176,7 @@ char* dec_to_oct_char(int num, int &size)
     return oct;
 }
 
+//O(logn)
 char *sum_oct(int num1, int num2, int size)
 {
     int sum = num1+num2;
@@ -179,6 +186,7 @@ char *sum_oct(int num1, int num2, int size)
     return summy_oct;
 }
 
+//O(logn)
 char *dif_oct(int num1, int num2, int size)
 {
     int dif = num1-num2;
@@ -189,6 +197,7 @@ char *dif_oct(int num1, int num2, int size)
 }
 
 
+//O(logn)
 char* dec_to_hex_char(int num, int &size)
 {
     bool isNegative = num < 0;
@@ -219,6 +228,7 @@ char* dec_to_hex_char(int num, int &size)
     return hex;
 }
 
+//O(n)
 int* encodeBase3(int barrel, int size)
 {
     int* digits = new int[size];
@@ -230,6 +240,7 @@ int* encodeBase3(int barrel, int size)
     return digits;
 }
 
+//O(n)
 int decodeBarrel(bool* died1, bool* died2, int size)
 {
     int barrel = 0;
@@ -248,6 +259,7 @@ int decodeBarrel(bool* died1, bool* died2, int size)
 }
 
 // получение вводимых результатов
+//O(n)
 void getExperimentalResults(bool* died1, bool* died2, int size)
 {
     cout << BYELLOW << "Введите результаты:" << RESET << endl;
@@ -268,4 +280,23 @@ void getExperimentalResults(bool* died1, bool* died2, int size)
         }
         else died2[i] = false;
     }
+}
+
+//O(n * logn)
+bool isDivisibleBy(int n, int d)
+{
+    int temp = n;
+    while (temp >= d)
+    {
+        int diff = 0, carry;
+        int a = temp, b = (~d + 1);
+        while (b != 0)
+        {
+            carry = (a & b) << 1;
+            a = a ^ b;
+            b = carry;
+        }
+        temp = a;
+    }
+    return temp == 0;
 }
