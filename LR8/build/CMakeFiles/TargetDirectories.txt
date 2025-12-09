@@ -1,0 +1,3 @@
+/Users/valeriayurhilevich/Учеба/553503/OАиП/LR8/build/CMakeFiles/Task_1.dir
+/Users/valeriayurhilevich/Учеба/553503/OАиП/LR8/build/CMakeFiles/edit_cache.dir
+/Users/valeriayurhilevich/Учеба/553503/OАиП/LR8/build/CMakeFiles/rebuild_cache.dir
