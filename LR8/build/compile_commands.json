@@ -10,5 +10,17 @@
   "command": "/usr/bin/clang++   -g -std=gnu++17 -arch arm64 -o CMakeFiles/Task_1.dir/Task_1/main.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR8/Task_1/main.cpp",
   "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR8/Task_1/main.cpp",
   "output": "CMakeFiles/Task_1.dir/Task_1/main.cpp.o"
+},
+{
+  "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR8/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++17 -arch arm64 -o CMakeFiles/Task_2.dir/Task_2/data.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR8/Task_2/data.cpp",
+  "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR8/Task_2/data.cpp",
+  "output": "CMakeFiles/Task_2.dir/Task_2/data.cpp.o"
+},
+{
+  "directory": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR8/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++17 -arch arm64 -o CMakeFiles/Task_2.dir/Task_2/main.cpp.o -c /Users/valeriayurhilevich/Учеба/553503/OАиП/LR8/Task_2/main.cpp",
+  "file": "/Users/valeriayurhilevich/Учеба/553503/OАиП/LR8/Task_2/main.cpp",
+  "output": "CMakeFiles/Task_2.dir/Task_2/main.cpp.o"
 }
 ]

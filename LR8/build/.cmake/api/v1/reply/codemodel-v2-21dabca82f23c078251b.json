@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "LR8",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -41,6 +43,13 @@
 					"id" : "Task_1::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-Task_1-Debug-2ef3fa8e7571051bf35f.json",
 					"name" : "Task_1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Task_2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Task_2-Debug-4ad994c1fdf6c6d55b2d.json",
+					"name" : "Task_2",
 					"projectIndex" : 0
 				}
 			]

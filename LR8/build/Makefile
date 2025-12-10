@@ -129,6 +129,19 @@ Task_1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_1.dir/build.make CMakeFiles/Task_1.dir/build
 .PHONY : Task_1/fast
 
+#=============================================================================
+# Target rules for targets named Task_2
+
+# Build rule for target.
+Task_2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Task_2
+.PHONY : Task_2
+
+# fast build rule for target.
+Task_2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_2.dir/build.make CMakeFiles/Task_2.dir/build
+.PHONY : Task_2/fast
+
 Task_1/customer.o: Task_1/customer.cpp.o
 .PHONY : Task_1/customer.o
 
@@ -177,6 +190,54 @@ Task_1/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_1.dir/build.make CMakeFiles/Task_1.dir/Task_1/main.cpp.s
 .PHONY : Task_1/main.cpp.s
 
+Task_2/data.o: Task_2/data.cpp.o
+.PHONY : Task_2/data.o
+
+# target to build an object file
+Task_2/data.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_2.dir/build.make CMakeFiles/Task_2.dir/Task_2/data.cpp.o
+.PHONY : Task_2/data.cpp.o
+
+Task_2/data.i: Task_2/data.cpp.i
+.PHONY : Task_2/data.i
+
+# target to preprocess a source file
+Task_2/data.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_2.dir/build.make CMakeFiles/Task_2.dir/Task_2/data.cpp.i
+.PHONY : Task_2/data.cpp.i
+
+Task_2/data.s: Task_2/data.cpp.s
+.PHONY : Task_2/data.s
+
+# target to generate assembly for a file
+Task_2/data.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_2.dir/build.make CMakeFiles/Task_2.dir/Task_2/data.cpp.s
+.PHONY : Task_2/data.cpp.s
+
+Task_2/main.o: Task_2/main.cpp.o
+.PHONY : Task_2/main.o
+
+# target to build an object file
+Task_2/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_2.dir/build.make CMakeFiles/Task_2.dir/Task_2/main.cpp.o
+.PHONY : Task_2/main.cpp.o
+
+Task_2/main.i: Task_2/main.cpp.i
+.PHONY : Task_2/main.i
+
+# target to preprocess a source file
+Task_2/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_2.dir/build.make CMakeFiles/Task_2.dir/Task_2/main.cpp.i
+.PHONY : Task_2/main.cpp.i
+
+Task_2/main.s: Task_2/main.cpp.s
+.PHONY : Task_2/main.s
+
+# target to generate assembly for a file
+Task_2/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task_2.dir/build.make CMakeFiles/Task_2.dir/Task_2/main.cpp.s
+.PHONY : Task_2/main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +247,19 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Task_1"
+	@echo "... Task_2"
 	@echo "... Task_1/customer.o"
 	@echo "... Task_1/customer.i"
 	@echo "... Task_1/customer.s"
 	@echo "... Task_1/main.o"
 	@echo "... Task_1/main.i"
 	@echo "... Task_1/main.s"
+	@echo "... Task_2/data.o"
+	@echo "... Task_2/data.i"
+	@echo "... Task_2/data.s"
+	@echo "... Task_2/main.o"
+	@echo "... Task_2/main.i"
+	@echo "... Task_2/main.s"
 .PHONY : help
 
 

@@ -15,7 +15,7 @@ using namespace std;
 void menu()
 {
     cout << BBLUE << "===============Меню===============\n"
-         << "0. Вывести меню\n" 
+         << "0. Вывести меню\n"
          << "1. Ввести клиентов\n"
          << "2. Просмотр клиентов\n"
          << "3. Добавить клиетов\n"
@@ -129,15 +129,15 @@ void printArr(Customer *&person, int &size)
     cout << GREEN << "Данные по клиентам: " << "\n";
     for (int i = 0; i < size; i++)
     {
-        cout << GREEN << "============Клиент №" << i + 1 << "============\n";
-        cout << "ФИО: " << person[i].name;
-        cout << "\n";
+        cout << GREEN << "============Клиент №" << i + 1 << "============\n"
+             << "ФИО: " << person[i].name
+             << "\n"
 
-        cout << "Домашний адрес: " << person[i].address;
-        cout << "\n";
+             << "Домашний адрес: " << person[i].address
+             << "\n"
 
-        cout << "Размер предоставляемой скидки(%): " << person[i].discount.percent << RESET;
-        cout << "\n";
+             << "Размер предоставляемой скидки(%): " << person[i].discount.percent << RESET
+             << "\n";
     }
     return;
 }
@@ -230,8 +230,8 @@ void delete_changeCustomer(Customer *&person, int &size)
     cout << "Введите номер клиента, у которого нужно изменить или удалить данные: ";
     cin >> n;
     cout << "\n";
-    while(n>size)
-    { 
+    while (n > size)
+    {
         cout << BRED << "Такого клиента нет. Всего " << size << " клиентов. Попробуйте снова: " << RESET;
         cin >> n;
     }
