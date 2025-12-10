@@ -14,16 +14,7 @@ void sum()
 {
     int size = 0;
     Customer *person = new Customer[size];
-    cout << BBLUE << "===============Меню===============\n"
-         << "1. Ввести клиентов\n"
-         << "2. Просмотр клиентов\n"
-         << "3. Добавить клиетов\n"
-         << "4. Найти нужного клиента\n"
-         << "5. Удалить или изменить данные по клиенту\n"
-         << "6. Записать файл\n"
-         << "7. Читать файл\n"
-         << "8. Отсортировать клиетов по возрастанию их процентов скидки\n"
-         << RESET;
+    menu();
     while (true)
     {
         int n;
@@ -31,6 +22,9 @@ void sum()
         cin >> n;
         switch (n)
         {
+        case 0:
+            menu();
+            break;
         case 1:
             allCustomers(person, size);
             break;
@@ -56,7 +50,8 @@ void sum()
             insertionSortByDiscount(person, size);
             break;
         default:
-            cout << BRED << "Данной команды не найдено.\n" << RESET;
+            cout << BRED << "Данной команды не найдено.\n"
+                 << RESET;
             return;
         }
     }

@@ -15,6 +15,8 @@ struct Customer
     union DiscountValue discount;
 };
 
+void menu();
+
 void allCustomers(Customer *&person, int &size);
 
 void printArr(Customer *&person, int &size);

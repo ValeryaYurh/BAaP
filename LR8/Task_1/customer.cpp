@@ -12,6 +12,22 @@ using namespace std;
 #define RESET "\033[0m"
 #define BYELLOW "\033[93m"
 
+void menu()
+{
+    cout << BBLUE << "===============Меню===============\n"
+         << "0. Вывести меню\n" 
+         << "1. Ввести клиентов\n"
+         << "2. Просмотр клиентов\n"
+         << "3. Добавить клиетов\n"
+         << "4. Найти нужного клиента\n"
+         << "5. Удалить или изменить данные по клиенту\n"
+         << "6. Записать файл\n"
+         << "7. Читать файл\n"
+         << "8. Отсортировать клиетов по возрастанию их процентов скидки\n"
+         << RESET;
+    return;
+}
+
 void allCustomers(Customer *&person, int &size)
 {
     int n;
@@ -214,6 +230,11 @@ void delete_changeCustomer(Customer *&person, int &size)
     cout << "Введите номер клиента, у которого нужно изменить или удалить данные: ";
     cin >> n;
     cout << "\n";
+    while(n>size)
+    { 
+        cout << BRED << "Такого клиента нет. Всего " << size << " клиентов. Попробуйте снова: " << RESET;
+        cin >> n;
+    }
 
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
@@ -229,8 +250,6 @@ void delete_changeCustomer(Customer *&person, int &size)
 
     if (restriction == "c")
     {
-        cin.ignore(numeric_limits<streamsize>::max(), '\n');
-
         cout << BYELLOW << "ФИО: " << RESET;
         getline(cin, person[n - 1].name);
         cout << "\n";
@@ -268,7 +287,16 @@ void delete_changeCustomer(Customer *&person, int &size)
 
 void writeFile(Customer *&person, int &size)
 {
-    ofstream outFile("customers.txt");
+    ofstream outFile("../Task_1/customers.txt", ios::out | ios::trunc);
+
+    if (!outFile.is_open())
+    {
+        cout << BRED << "Ошибка: не удалось создать/открыть файл customers.txt\n"
+             << RESET;
+
+        return;
+    }
+
     for (int i = 0; i < size; i++)
     {
         outFile << person[i].name << endl;
@@ -276,13 +304,29 @@ void writeFile(Customer *&person, int &size)
         outFile << person[i].discount.percent << endl;
     }
     outFile.close();
-    cout << GREEN << "Данные сохранены в customers.txt\n"
-         << RESET;
+
+    ifstream check("../Task_1/customers.txt");
+    if (check.good() && size > 0)
+    {
+        cout << GREEN << "Данные (" << size << " записей) сохранены в customers.txt\n"
+             << RESET;
+    }
+    else if (size == 0)
+    {
+        cout << GREEN << "Файл создан, но данных для сохранения нет\n"
+             << RESET;
+    }
+    else
+    {
+        cout << BRED << "Ошибка: файл не был создан\n"
+             << RESET;
+    }
+    check.close();
 }
 
 void readFile(Customer *&person, int &size)
 {
-    ifstream inFile("customers.txt");
+    ifstream inFile("../Task_1/customers.txt", ios::in);
 
     if (!inFile)
     {
