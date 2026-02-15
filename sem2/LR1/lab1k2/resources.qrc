@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>circle.png</file>
+        <file>rhomb.png</file>
+        <file>triangle.png</file>
+        <file>star.png</file>
+        <file>square.png</file>
+        <file>sixPointedStar.png</file>
+        <file>sixCornerFigure.png</file>
+        <file>rectangle.png</file>
+        <file>eightPointerStar.png</file>
+        <file>trapezoid.png</file>
+        <file>pipette.png</file>
+    </qresource>
+</RCC>
