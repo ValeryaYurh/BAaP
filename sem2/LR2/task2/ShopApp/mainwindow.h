@@ -81,8 +81,6 @@ private:
     void applyStyle();
     void updateListDisplay();
 
-    // Приватный метод для BLACK BOX тестирования
-    void runBlackBoxTests();  // Запускается автоматически в конструкторе
 };
 
 #endif

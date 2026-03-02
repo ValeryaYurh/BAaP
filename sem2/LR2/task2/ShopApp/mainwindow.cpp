@@ -1,5 +1,4 @@
 #include "mainwindow.h"
-#include "agevalidator.h"
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 #include <QGridLayout>
@@ -79,7 +78,6 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 
     applyStyle();
     switchToCreate();
-    runBlackBoxTests();
 }
 
 // ----------------- Страница создания товара -----------------
@@ -929,121 +927,6 @@ void MainWindow::clearFilters()
 void MainWindow::showProducts()
 {
     updateListDisplay();
-}
-
-// ----------------- Тестирование -----------------
-
-void MainWindow::runBlackBoxTests()
-{
-    qDebug() << "=============== ЗАПУСК ТЕСТОВ ===============";
-
-    // Формируем результаты текущего запуска
-    QString currentResults;
-    currentResults += "\n\n"; // Отступ перед новым запуском
-    currentResults += "========================================\n";
-    currentResults += "   НОВЫЙ ЗАПУСК ТЕСТОВ\n";
-    currentResults += "   " + QDateTime::currentDateTime().toString("dd.MM.yyyy hh:mm:ss") + "\n";
-    currentResults += "========================================\n\n";
-
-    // ТЕСТ-КЕЙСЫ
-    struct TestCase {
-        QString input;
-        QString description;
-        bool expectedValid;
-    };
-
-    QList<TestCase> testCases = {
-        {"", "Пустое поле", false},
-        {"25", "Нормальный возраст (25)", true},
-        {"0", "Нижняя граница (0)", true},
-        {"130", "Верхняя граница (130)", true},
-        {"-2", "Меньше диапазона (-2)", false},
-        {"200", "Больше диапазона (200)", false},
-        {" 25 ", "Пробелы вокруг числа", true},
-        {"2 5", "Пробел внутри числа", false},
-        {"21.5", "Точка как разделитель (21.5)", false},
-        {"21,5", "Запятая как разделитель (21,5)", false},
-        {"двадцать пять", "Текст вместо числа", false},
-        {"abc", "Произвольный текст", false},
-        {"21@#$", "Спецсимволы", false},
-        {"25+", "Плюс в конце", false},
-        {"001", "Ведущие нули", true},
-        {"000", "Только нули", true},
-        {"999999", "Очень большое число", false},
-        {"   ", "Только пробелы", false},
-        {"25 лет", "Число с текстом", false},
-        {"возраст 25", "Текст с числом", false}
-    };
-
-    int passed = 0;
-    int total = testCases.size();
-
-    currentResults += "| № | Тест-кейс | Входные данные | Ожидаемый результат | Фактический результат | Статус |\n";
-    currentResults += "|---|-----------|----------------|---------------------|----------------------|--------|\n";
-
-    for(int i = 0; i < testCases.size(); i++) {
-        const TestCase& test = testCases[i];
-        QString errorMessage;
-        bool result = AgeValidator::validate(test.input, errorMessage);
-        bool isPass = (result == test.expectedValid);
-
-        QString expectedStr = test.expectedValid ? "✓ Валидно" : "✗ Невалидно";
-        QString actualStr = result ? "✓ Валидно" : "✗ Невалидно";
-        if (!errorMessage.isEmpty()) actualStr += " (" + errorMessage + ")";
-
-        currentResults += QString("| %1 | %2 | `%3` | %4 | %5 | %6 |\n")
-                              .arg(i + 1)
-                              .arg(test.description)
-                              .arg(test.input)
-                              .arg(expectedStr)
-                              .arg(actualStr)
-                              .arg(isPass ? "✅ ПРОЙДЕН" : "❌ НЕ ПРОЙДЕН");
-
-        if (isPass) passed++;
-    }
-
-    double percentage = 100.0 * passed / total;
-    currentResults += "\n## Итоги тестирования\n\n";
-    currentResults += QString("- **Всего тестов:** %1\n").arg(total);
-    currentResults += QString("- **Пройдено:** %1\n").arg(passed);
-    currentResults += QString("- **Не пройдено:** %1\n").arg(total - passed);
-    currentResults += QString("- **Успешность:** %1%\n").arg(QString::number(percentage, 'f', 1));
-
-    currentResults += "\n## Заключение\n\n";
-    currentResults += (passed == total) ? "✅ **Все тесты пройдены успешно!**\n" : "❌ **Обнаружены ошибки.**\n";
-    currentResults += "\n---\n\n";
-
-    // СОХРАНЯЕМ В ФАЙЛ
-    QString fileName = QDir::homePath() + "/Desktop/black_box_test_results.md";
-    QFile file(fileName);
-
-    // Читаем старый файл
-    QString oldContent;
-    if (file.exists()) {
-        if (file.open(QIODevice::ReadOnly | QIODevice::Text)) {
-            QTextStream in(&file);
-            oldContent = in.readAll();
-            file.close();
-        }
-    }
-
-    // Перезаписываем: СТАРОЕ + НОВОЕ
-    if (file.open(QIODevice::WriteOnly | QIODevice::Text)) {
-        QTextStream out(&file);
-        out.setEncoding(QStringConverter::Utf8);
-
-        if (!oldContent.isEmpty()) {
-            out << oldContent;
-            if (!oldContent.endsWith("\n\n")) out << "\n\n";
-        }
-
-        out << currentResults;
-        file.close();
-
-        qDebug() << "✅ Тесты сохранены! Размер:" << file.size() << "байт";
-    }
-
-    qDebug() << "=============== ТЕСТЫ ЗАВЕРШЕНЫ ===============";
 }
 
 // ----------------- Стиль -----------------

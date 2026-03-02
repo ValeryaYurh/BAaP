@@ -17,8 +17,6 @@ add_executable(ShopApp
     product.cpp
     productfile.h
     productfile.cpp
-    agevalidator.h
-    agevalidator.cpp
 )
 
 target_link_libraries(ShopApp PRIVATE Qt6::Widgets Qt6::Gui Qt6::Core)
